@@ -1,0 +1,53 @@
+imports:
+  - path: vm-securehost.jinja
+  - path: vm-bastionhost.jinja
+
+resources:
+  - name: secure-network
+    type: compute.v1.network
+    properties:
+      autoCreateSubnetworks: false
+
+  - name: secure-subnetwork
+    type: compute.v1.subnetwork
+    properties:
+      region: europe-west3
+      network: $(ref.secure-network.selfLink)
+      ipCidrRange: 10.130.0.0/20
+
+  - name: allow-rdp-to-bastion
+    type: compute.v1.firewall
+    properties:
+      network: $(ref.secure-network.selfLink)
+      targetTags: ["bastion"]
+      sourceRanges: ["0.0.0.0/0"]
+      allowed:
+        - IPProtocol: TCP
+          ports: [3389]
+
+  - name: allow-rdp-to-secure-subnetwork
+    type: compute.v1.firewall
+    properties:
+      network: $(ref.secure-network.selfLink)
+      sourceRanges: ["10.130.0.0/20"]
+      allowed:
+        - IPProtocol: TCP
+          ports: [3389]
+
+  - name: vm-securehost
+    type: vm-securehost.jinja
+    properties:
+      machineType: n1-standard-1
+      zone: europe-west3-a
+      tags: ["secure"]
+      network: $(ref.secure-network.selfLink)
+      subnetwork: $(ref.secure-subnetwork.selfLink)
+
+  - name: vm-bastionhost
+    type: vm-bastionhost.jinja
+    properties:
+      machineType: n1-standard-1
+      zone: europe-west3-a
+      tags: ["bastion"]
+      network: $(ref.secure-network.selfLink)
+      subnetwork: $(ref.secure-subnetwork.selfLink)
