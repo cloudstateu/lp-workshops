@@ -131,6 +131,8 @@ Maximum number of instances:    2
 
 2. Check that both of the instance have same `index.html` deployed. Use SSH to login to VM and check response on the localhost using `curl localhost` and on the other VM (`curl <OTHER_VM_INTERNAL_IP>`; use internal IP address).
 
+   ![img](./img/ssh.png)
+
 ## Step 6. Creating `template2-cr`
 
 1. Create new template `template2-cr` which will be used to create initial version of Managed Group Instance.
@@ -168,8 +170,6 @@ gcloud compute instance-groups managed rolling-action start-update instance-grou
 ```
 
 2. Go to the `VM instances` view. You should see that one of the instances gets updated. Login via SSH to an instance and verfiy that one of the instances contains `version 1`, and second instance `version 2` of the index.html on the Apache server.
-
-   ![img](./img/ssh.png)
 
 3. Perform update to the remaining instance from the group:
 
