@@ -17,6 +17,7 @@ gcloud compute instance-templates delete fort-template -q
 
 # Network
 gcloud compute firewall-rules delete fortressnet-allow-load-balancer -q
+gcloud compute firewall-rules delete fortressnet-allow-http -q
 gcloud compute networks delete fortressnet -q
 
 gcloud compute addresses delete fortressnet-ip --global -q
