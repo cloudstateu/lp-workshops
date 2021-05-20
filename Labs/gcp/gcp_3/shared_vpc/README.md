@@ -28,7 +28,7 @@ subnets:
 
 ## Demo: Utworzenie Shared VPC
 
--
+--
 
 ## Demo: Dodanie Firewall Rules
 
