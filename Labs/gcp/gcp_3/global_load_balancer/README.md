@@ -314,6 +314,13 @@ Instance Groups:
 
 1. Odczekaj około 2 minuty i sprawdź wizualizację ruchu w portalu GCP
 
+## Krok 11: Usuń maszyny do Stress Test
+
+```bash
+gcloud compute instances delete europe-loadtest --zone europe-west1-c -q
+gcloud compute instances delete asia-loadtest --zone asia-east1-c -q
+```
+
 ---
 
 **Koniec laboratorium**
