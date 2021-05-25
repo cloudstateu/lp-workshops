@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title Static Files
+    meta(charset='utf-8')
+    link(rel="stylesheet", href="/static/main.css")
+  body
+    form(method="POST", action="/upload", enctype="multipart/form-data")
+      input(type="file", name="file")
+      input(type="submit")
+    div(style={"margin-top": '20px'})
+      if filenames.length === 0
+        span No files in a bucket
+      else
+        table
+          tr
+            th Filename
+          each filename in filenames
+            tr
+              td= filename
