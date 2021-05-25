@@ -9,7 +9,7 @@ W tym laboratorium zobaczysz jak hostować statyczną aplikację internetową na
 
 ---
 
-## Step 1: Sklonuj to repozytorium do Cloud Shell
+## Krok 1: Sklonuj to repozytorium do Cloud Shell
 
 1. Uruchom Cloud Shell
 1. Wykonaj komendę:
@@ -18,7 +18,7 @@ W tym laboratorium zobaczysz jak hostować statyczną aplikację internetową na
    git clone https://github.com/cloudstateu/lp-workshops
    ```
 
-## Step 2: Stwórz Storage Bucket
+## Krok 2: Stwórz Storage Bucket
 
 1. W Cloud Shell wykonaj:
 
@@ -26,7 +26,7 @@ W tym laboratorium zobaczysz jak hostować statyczną aplikację internetową na
    gsutil mb gs://<BUCKET_NAME>
    ```
 
-## Step 3: Wgraj pliki do Storage Bucket
+## Krok 3: Wgraj pliki do Storage Bucket
 
 1. Przejdź do katalogu `/app` i wykonaj komendę:
 
@@ -34,7 +34,7 @@ W tym laboratorium zobaczysz jak hostować statyczną aplikację internetową na
    gsutil cp . gs://<BUCKET_NAME>
    ```
 
-## Step 4: Udostępnij pliki publicznie
+## Krok 4: Udostępnij pliki publicznie
 
 Domyślnie pliki w Cloud Storage Bucket nie są dostępne publicznie. Chcąc stworzyć publicznie dostępną stronę internetową musimy udostępnić wszystkie pliki w Bucket publicznie.
 
@@ -42,7 +42,7 @@ Domyślnie pliki w Cloud Storage Bucket nie są dostępne publicznie. Chcąc stw
 gsutil iam ch allUsers:objectViewer gs://<BUCKET_NAME>
 ```
 
-## Step 5: Skonfiguruj stronę internetową
+## Krok 5: Skonfiguruj stronę internetową
 
 Należy skonfigurować stronę internetową, żeby GCP wiedział, które pliki wyświetlać
 
@@ -53,7 +53,7 @@ gsutil web set -m index.html -e 404.html gs://<BUCKET_NAME>
 - `-m` - Main Page Suffix - plik wyświetlany po wejściu na ścieżkę `/`
 - `-e` - Not Found Page - plik wyświetlany, gdy zasób nie zostanie znaleziony
 
-## Step 6: Stwórz Load Balancer
+## Krok 6: Stwórz Load Balancer
 
 Będziemy tworzyli Load Balancer w celu udostępnienia aplikacji pod statycznym adresem IP. Później można użyć go do podpięcia domeny lub skonfigurowania HTTP(s).
 
@@ -61,11 +61,11 @@ Będziemy tworzyli Load Balancer w celu udostępnienia aplikacji pod statycznym 
 1. Skonfiguruj Backend Bucket o nazwie `bb-hsw`. Wybierz Storage, który utworzyłeś wcześniej
 1. Skonfiguruj Frontend IP and port. Nazwij go `ip-hsw`; resztę ustawień zostaw domyślnych.
 
-## Step 7: Poczekaj na skonfigurowanie Load Balancer
+## Krok 7: Poczekaj na skonfigurowanie Load Balancer
 
 Poczekaj około 2-3 minuty aż Load Balancer i adres IP zostaną skonfigurowane.
 
-## Step 8: Przetestuj czy aplikacja jest dostępna
+## Krok 8: Przetestuj czy aplikacja jest dostępna
 
 1. Wejdź w szczegóły Load Balancer o nazwie `lb-hsw` i pobierz adres IP:
 
@@ -74,7 +74,7 @@ Poczekaj około 2-3 minuty aż Load Balancer i adres IP zostaną skonfigurowane.
 1. Wyświetl stronę. Jeśli nadal otrzymujesz informację o braku zasobu do wyświetlenia odczekaj kolejne 1-2 minuty.
 1. Spróbuj wyświetlić nieistniejący zasób np. `http://<WEBSTIE_IP>/123` i sprawdź czy otrzymasz zawartość strony `404.html`.
 
-## Step 9: Zaktualizuj aplikację
+## Krok 9: Zaktualizuj aplikację
 
 1. Stwórz nowy plik `test.html` z dowolną treścią HTML i wgraj aplikacje ponownie na Stroage Bucket (jak w kroku 3). **Nie otwieraj przeglądarki by przetestować wyświetlanie pliku**.
 1. Zmień domyślne ustawienia cache dla pliku.
