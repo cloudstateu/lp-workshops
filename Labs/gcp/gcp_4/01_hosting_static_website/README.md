@@ -1,4 +1,4 @@
-<img src="../../../img/logo.png" alt="Chmurowisko logo" width="200"  align="right">
+<img src="../../../../img/logo.png" alt="Chmurowisko logo" width="200"  align="right">
 <br><br>
 <br><br>
 <br><br>
@@ -99,3 +99,11 @@ Ustawienia to:
 
 - `public` - zapytanie może być zcacheowane w dowolnym miejscu (na serwerze, na maszynie klienta) 
 - `max-age=3600` - liczba sekund na jaką cacheowany jest zasób
+
+---
+
+**Koniec laboratorium**
+
+<br><br>
+
+<center><p>&copy; 2021 Chmurowisko Sp. z o.o.<p></center>
