@@ -28,8 +28,8 @@ In this lab you'll create a new Cloud SQL instance with a sample table and data.
    (user password is `password123`)
 
 1. List current databases: `\l`
-1. Create new database `CREATE DATABASE wpe_test;`
-1. Connect to `wpe_test` database: `\c wpe_test`
+1. Create new database `CREATE DATABASE lp_test;`
+1. Connect to `lp_test` database: `\c lp_test`
 1. Create new table _People_:
 
    ```sql
