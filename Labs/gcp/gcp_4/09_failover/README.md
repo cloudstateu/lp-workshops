@@ -1,4 +1,4 @@
-<img src="../../../img/logo.png" alt="Chmurowisko logo" width="200" align="right">
+<img src="../../../../img/logo.png" alt="Chmurowisko logo" width="200"  align="right">
 <br><br>
 <br><br>
 <br><br>
@@ -11,44 +11,12 @@ In this lab you'll see how sample application behaves when it lose connection wi
 
 ---
 
-## Step 1: Open Cloud SQL instance overview page
+## Step 1: Query sample application
 
-1. In the navigation menu find _SQL_ and click on it. Find and select `sql-instance` on instances list.
-
-   ![](./img/01_navigation_menu.png)
-
-## Step 2: Query sample application again
-
-1. Copy the `svc-test` Cluster IP address.
+1. From Cloud Shell or your local machine run the following command:
 
    ```bash
-   kubectl get svc/svc-test
-   ```
-
-1. Create a container and connect to it:
-
-   ```bash
-   kubectl run -i --tty --image ubuntu dns-test --rm
-   ```
-
-1. Install `curl`
-
-   ```bash
-   apt update
-   ```
-
-   ```bash
-   apt upgrade
-   ```
-
-   ```bash
-   apt install curl
-   ```
-
-1. Go to the Cloud Shell and run the following command:
-
-   ```bash
-   while true; do curl <SVC-IP>:8080/people && sleep 1 && echo ; done
+   while true; do curl -s http://<APP_ENGINE_DOMAIN>/winners | cut --characters=1-105 && sleep 1 ; done
    ```
 
    It will request your application every second and return data it get from database.
@@ -56,19 +24,16 @@ In this lab you'll see how sample application behaves when it lose connection wi
    You should get the following output:
 
    ```bash
-   $ while true; do curl 10.83.245.205:8080/people && sleep 1 && echo ; done
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
    ...
    ```
 
    Don't stop the loop and move to the next step.
 
-## Step 3: Stop the Cloud SQL instance
+## Step 2: Stop the Cloud SQL instance
 
 1. On the Cloud SQL instance overview page click on "Stop"
 
@@ -77,16 +42,16 @@ In this lab you'll see how sample application behaves when it lose connection wi
 1. Go back to the `curl` loop and check the output. After you stopped database you should see following output:
 
    ```bash
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
    {"status":"fail","error":"Connection terminated unexpectedly"}
    {"status":"fail","error":"Connection terminated unexpectedly"}
    {"status":"fail","error":"Connection terminated unexpectedly"}
    {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"fail","error":"read ECONNRESET"}
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
    ...
    ```
 
@@ -94,13 +59,19 @@ In this lab you'll see how sample application behaves when it lose connection wi
 
    Don't stop the loop and move to the next step.
 
-## Step 4: Restart the Cloud SQL instance
+## Step 4: Start the Cloud SQL instance
 
 1. On the Cloud SQL instance overview page click on "Start"
 
    ![](./img/02_start_instance.png)
 
 1. Wait until application return correct database results.
+
+   ```bash
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   ...
+   ```
 
 ## Step 5: Configure Failover
 
@@ -125,13 +96,9 @@ In this lab you'll see how sample application behaves when it lose connection wi
    ![](./img/07_ha_configuration.png)
    ![](./img/08_ha_configuration_gcloud.png)
 
+1. It will take some time to provision failover instance (2-3 minutes)
+
 ## Step 6: Initiate failover manually and observe application behavior
-
-1. Go to the Cloud Shell and run the following command:
-
-   ```bash
-   while true; do curl <SVC-IP>:8080/people && sleep 1 && echo ; done
-   ```
 
 1. Click "Failover" button and trigger failover
 
@@ -142,53 +109,36 @@ In this lab you'll see how sample application behaves when it lose connection wi
    We expect to see similar output:
 
    ```bash
-   $ while true; do curl 10.83.245.205:8080/people && sleep 1 && echo ; done
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
-   {"status":"fail","error":"read ECONNRESET"}
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
+   {"status":"fail","error":"connect ECONNREFUSED /cloudsql/training-maciejborowy-3:europe-west3:sql-instanc
    {"status":"fail","error":"timeout expired"}
    {"status":"fail","error":"timeout expired"}
-   {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"fail","error":"Connection terminated unexpectedly"}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
-   {"status":"ok","data":[{"pid":1,"firstname":"Joe","lastname":"Doe"},{"pid":2,"firstname":"Jane","lastname":"Dee"}]}
+   {"status":"fail","error":"timeout expired"}
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   {"status":"ok","data":[{"wid":1,"year":1928,"age":44,"name":"Emil Jannings","movie":"The Last Command"},{
+   ...
    ```
 
-   As you see my application switched to standby instance after ~20 seconds.
-
-1. Stop `curl` loop using `Ctrl-C` combination and exit temporary container.
+   As you see my application switched to standby instance after ~15 seconds.
 
 ---
 
-## END LAB
+**Koniec laboratorium**
 
-<br>
-<br>
+<br><br>
+
 <center><p>&copy; 2021 Chmurowisko Sp. z o.o.<p></center>
