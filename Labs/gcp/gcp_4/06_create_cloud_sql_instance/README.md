@@ -13,7 +13,7 @@ In this lab you'll create a new Cloud SQL instance with a sample table and data.
 
 ## Step 1: Create new Cloud SQL instance
 
-1. Create new Cloud SQL instance (provisioning should take ~2 minutes)
+1. Create new Cloud SQL instance (provisioning should take 2-3 minutes)
 
    ```bash
    gcloud sql instances create sql-instance --database-version=POSTGRES_13 --cpu=1 --memory=3840MiB --zone=europe-west3-a --root-password=password123
@@ -28,8 +28,8 @@ In this lab you'll create a new Cloud SQL instance with a sample table and data.
    (user password is `password123`)
 
 1. List current databases: `\l`
-1. Create new database `CREATE DATABASE wpe_test;`
-1. Connect to `wpe_test` database: `\c wpe_test`
+1. Create new database `CREATE DATABASE lp_test;`
+1. Connect to `lp_test` database: `\c lp_test`
 1. Create new table _People_:
 
    ```sql
@@ -51,6 +51,8 @@ In this lab you'll create a new Cloud SQL instance with a sample table and data.
    ```sql
    SELECT * FROM people;
    ```
+
+1. Logout from database using `\q`
 
 ## END LAB
 
