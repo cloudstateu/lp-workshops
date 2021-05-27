@@ -8,12 +8,12 @@ const firebase = require('firebase/app');
 require('firebase/firestore');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAdLN5BvJcZy7ws8p6p2AE83hYZt9ilMgE",
-  authDomain: "training-maciejborowy-3.firebaseapp.com",
-  projectId: "training-maciejborowy-3",
-  storageBucket: "training-maciejborowy-3.appspot.com",
-  messagingSenderId: "611511646697",
-  appId: "1:611511646697:web:18f9597b770c15c9e17378"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -28,7 +28,7 @@ let db = firebase.firestore();
 const ref = (db).collection("users");
 ref.onSnapshot(
   snapshot => {
-    const items = snapshot.docs.map(item => item.data());
+    const items = snapshot.docs.map(item => { return { id: item.id, ...item.data() }});
     console.log(items);
   },
   e => {
@@ -43,8 +43,11 @@ ref.onSnapshot(
 // ###########
 
 const express = require("express");
+const bodyParser = require('body-parser');
 const morgan = require("morgan");
+
 const app = express();
+app.use(bodyParser.json());
 app.use(morgan("dev"));
 
 app.get("/", async (_, res) => {
@@ -54,6 +57,13 @@ app.get("/", async (_, res) => {
 
   res.json({ status: "ok", data: users });
 });
+
+// ********************************************** //
+//                                                //
+// Tu wklej kod dla metody POST /users            //
+//                                                //
+// ********************************************** //
+
 
 app.use((err, _, res, next) => {
   console.log("Handling uncaught error");

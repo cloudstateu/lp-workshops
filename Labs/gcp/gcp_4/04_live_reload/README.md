@@ -169,6 +169,28 @@ W tym ćwiczeniu poznasz sposoby pobierania danych z Firestore
 1. Ręcznie dodaj zmianę w kolekcji `users` (np. dodaj nowy dokument lub zmień dane wybranego)
 1. Sprawdź czy aplikacja wypisała nowe dane
 
+## Krok 8: Dodaj kod pozwalający na dodanie nowych rekordów
+
+1. Poniżej endpoint dla ścieżki `/` dodaj kod:
+
+   ```javascript
+   app.post("/users", async (req, res) => {
+   let ref = db.collection("users");
+   await ref.add(req.body);
+
+   res.sendStatus(200);
+   });
+   ```
+
+1. Zrestartuj aplikacje
+1. W drugim oknie terminala wykonaj request:
+
+   ```javascript
+   curl -X POST -H "Content-Type: application/json" -d '{"firstName":"Jane","lastName":"Dee"}' http://localhost:8080/users
+   ```
+
+1. Sprawdź czy dane zostały automatycznie zaktualizowane za pomocą mechanizmu live reload
+
 ---
 
 **Koniec laboratorium**
