@@ -3,9 +3,9 @@
 <br><br>
 <br><br>
 
-# TBA
+# Połączenie z bazą danych
 
-TBA
+W tym ćwiczeniu połączysz się z instancją bazy danych, pobierzesz z niej dane oraz dodasz nowe rekordy.
 
 ---
 
@@ -61,6 +61,8 @@ TBA
       { name: 'Sex', value: 'M' }
    ]
    ```
+
+> Do pobrania danych wykorzystujemy bibliotekę [`@google-cloud/spanner`](https://googleapis.dev/nodejs/spanner/latest/)
 
 ## Krok 4: Wstaw dodatkowe dane do bazy danych
 

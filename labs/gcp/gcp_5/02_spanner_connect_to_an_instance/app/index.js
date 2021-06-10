@@ -1,4 +1,4 @@
-const PROJECT_ID = 'training-w5-maciejborowy';
+const PROJECT_ID = '';
 const INSTANCE_ID = 'lp-spanner';
 const DATABASE_ID = 'lp-database';
 
@@ -26,16 +26,16 @@ const {Spanner} = require('@google-cloud/spanner');
   console.log(`Query: ${rows.length} found.`);
   rows.forEach(row => console.log(row.toJSON()));
 
-  // ##########
-  // #        #
-  // # Insert #
-  // #        #
-  // ##########
+  // ##################
+  // #                #
+  // # Part 2: Insert #
+  // #                #
+  // ##################
 
   if (process.argv.find(arg => arg === 'insert') !== null && rows.length <= 3) {
     const csv = require('csv-parser')
     const fs = require('fs')
-    
+
     const results = [];
 
     const table = database.table('Winners');
