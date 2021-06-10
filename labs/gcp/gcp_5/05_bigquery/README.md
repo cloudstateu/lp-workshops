@@ -98,14 +98,6 @@ bq query --use_legacy_sql=false \
    bq query "SELECT name,count FROM babynames.names2020 WHERE gender = 'M' ORDER BY count ASC LIMIT 5"
    ```
 
-## Krok 7: Usuń zbiór danych
-
-1. Wykonaj poniższą komendę. Potwierdź chęć usunięcia `y`.
-
-   ```bash
-   bq rm -r babynames
-   ```
-
 ---
 
 **Koniec laboratorium**

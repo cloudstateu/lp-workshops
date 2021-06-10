@@ -5,7 +5,7 @@
 
 # TBA
 
-W tym laboratorium przeanalizujesz zbiór danych [kursow autobusów po Manhattanie](https://www.kaggle.com/stoney71/new-york-city-transport-statistics)
+W tym laboratorium przeanalizujesz zbiór danych [kursów autobusów po Manhattanie](https://www.kaggle.com/stoney71/new-york-city-transport-statistics)
 
 ---
 
@@ -164,12 +164,6 @@ W tym kroku zwizualizujesz otrzymane dane na mapie. W tym celu będziesz musiał
 1. Twoja mapa powinna wyglądać podobnie do tej:
 
    ![img](./img/10-result.png)
-
-## Krok 10: Usuń instancję Bigtable
-
-```bash
-gcloud bigtable instances delete $INSTANCE_ID
-```
 
 ---
 
