@@ -86,16 +86,16 @@
 ## Krok 7: Dodaj konfigurację własnej aplikacji do fluentd
 
 1. Wyświetl zawartość katalogu `/etc/google-fluentd/config`
-1. Dodaj nowy plik `netlogger.conf`. Otwórz go do edycji (`sudo nano netlogger.conf`) i uzupełnij go poniższą treścią (**zaktualizuj wartość `path`**; możesz wkleić kod skrótem `Shift + Insert`; usuń spacje na początku linii):
+1. Dodaj nowy plik `netlogger.conf`. Otwórz go do edycji (`sudo nano netlogger.conf`) i uzupełnij go poniższą treścią (**zaktualizuj wartość `path`**; możesz wkleić kod skrótem `Shift + Insert`):
 
    ```
    <source>
-   @type tail
-   format none
-   path /home/<lpstudentXX>/lp-workshops/labs/gcp/gcp_7/01_logging/app/main.log
-   pos_file /var/lib/google-fluentd/pos/main.pos
-   read_from_head true
-   tag <tag>
+     type tail
+     format none
+     path /home/<lpstudentXX>/lp-workshops/labs/gcp/gcp_7/01_logging/app/main.log
+     pos_file /var/lib/google-fluentd/pos/netlogger.pos
+     read_from_head true
+     tag netlogger
    </source>
    ```
 
