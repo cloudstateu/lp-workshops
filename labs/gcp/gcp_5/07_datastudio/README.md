@@ -29,22 +29,22 @@ Wybierz BigQuery, uwierzytelnij połączenie (jeśli Google o to poprosi). Znajd
 
 1. Dodaj wykres najpopularniejszych imion
 
-   ![img](./img/02-studio.png)
-   ![img](./img/03-studio.png)
-   ![img](./img/04-studio.png)
+   ![img](./img/02_studio.png)
+   ![img](./img/03_studio.png)
+   ![img](./img/04_studio.png)
 
 ## Krok 5: Udostępnij raport dla osób z linkiem
 
 Wykonaj poniższe kroki, aby uzyskać link do raportu, który może zostać udostępniony każdej osobie.
 
-   ![img](./img/05-studio.png)
-   ![img](./img/06-studio.png)
-   ![img](./img/07-studio.png)
-   ![img](./img/08-studio.png)
+   ![img](./img/05_studio.png)
+   ![img](./img/06_studio.png)
+   ![img](./img/07_studio.png)
+   ![img](./img/08_studio.png)
 
 Sprawdź czy możesz wyświetlić raport w trybie incognito.
 
-   ![img](./img/09-studio.png)
+   ![img](./img/09_studio.png)
 
 ---
 
