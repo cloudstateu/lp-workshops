@@ -7,7 +7,7 @@
 
 ## Krok 1: Utwórz maszynę wirtualną
 
-1. Utwórz maszynę wirtualną z domyślnymi ustawieniami (OS: Debian)
+1. Utwórz maszynę wirtualną w regionie `europe-west3`. Inne ustawienia pozostaw domyślnie.
 1. Zaloguj się na maszynę SSH
 
 ## Krok 2: Skopiuj aplikację
@@ -97,6 +97,10 @@
 1. Na liście logów powinny pojawić się najnowsze logi z aplikacji:
 
    ![img](./img/logs.png)
+
+## Krok 9: Usuń maszynę wirtualną
+
+1. Przejdź do listy maszyn wirtualnych i usuń ją
 
 ---
 
