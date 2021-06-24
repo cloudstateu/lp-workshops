@@ -111,7 +111,7 @@
 1. Przejdź do Operations Logging i spróbuj znaleźć logi dla swojej maszyny wirtualnej
 1. Na liście logów powinny pojawić się najnowsze logi z aplikacji:
 
-   ![img](./img/logs.png)
+   ![img](./img/logs2.png)
 
 ## Krok 9: Usuń maszynę wirtualną
 
