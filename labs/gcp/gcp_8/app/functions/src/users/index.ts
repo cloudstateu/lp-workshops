@@ -18,7 +18,9 @@ app.post("/update", async (request, response) => {
 
     const {id, status} = request.body;
 
-    const ref = db.collection("activity").doc(id);
+    console.log(id.toString());
+
+    const ref = db.collection("users").doc(id.toString());
     await ref.update({status});
 
     return response.sendStatus(200);
@@ -30,7 +32,27 @@ app.post("/update", async (request, response) => {
 
 export const status = functions.https.onRequest(app);
 
-export const notify = functions.https.onRequest((request, response) => {
-  functions.logger.info(request.body);
-  response.sendStatus(200);
+export const list = functions.https.onRequest((request, response) => {
+  const ref = db.collection("users");
+
+  ref.get()
+      .then((data) => data.docs.map((doc) => {
+        const data = doc.data();
+
+        return {
+          ...data,
+          id: doc.id,
+        };
+      }))
+      .then((docs) => response.json(docs));
 });
+
+export const notify = functions.firestore
+    .document("/users/{userId}")
+    .onUpdate(async (snap) => {
+      const oldStatus = snap.before.get("status");
+      const newStatus = snap.after.get("status");
+
+      // eslint-disable-next-line max-len
+      functions.logger.info(`Status changed. Old status: ${oldStatus}. New status: ${newStatus}.`);
+    });
