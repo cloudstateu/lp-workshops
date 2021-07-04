@@ -1,5 +1,12 @@
 const express = require("express");
+const morgan = require('morgan');
+
 const app = express();
+app.use(morgan('dev'));
+
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', data: { api: { user: process.env.API_USER || null } } });
+});
 
 // GET /greet?name=Joe
 app.get("/greet", (req, res) => {
@@ -7,7 +14,7 @@ app.get("/greet", (req, res) => {
   res.send(`Hello, ${name}!`);
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 app.listen(port, () => {
   console.log(`Running on http://localhost:${port}`);
 });
