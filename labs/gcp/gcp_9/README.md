@@ -45,20 +45,42 @@
    gcloud container images list-tags eu.gcr.io/training-w9-lpstudentXX/lpw9
    ```
 
-   Obraz udostępniony jest w rejestrze, którego dane przechowywane w Data Center wewnątrz Unii Europejskiej ([link](https://cloud.google.com/container-registry/docs/pushing-and-pulling#add-registry)).
-
 - [X] Wdróż nową wersję aplikacji na Cloud Run (z obrazu przechowywanego na Container Registry)
 
    ```bash
    gcloud run deploy testy --image eu.gcr.io/training-w9-lpstudentXX/lpw9:0.1.0 --platform managed --region europe-west3 --allow-unauthenticated
    ```
 
+## Budowanie obrazu kontenera za pomocą Cloud Build
+
+- [X] Lokalnie rozwijana wersja aplikacji zostanie zbudowana za pomocą Cloud Build
+
+  ```bash
+  gcloud builds submit --tag eu.gcr.io/training-w9-lpstudentXX/lpw9:0.2.0
+  ```
+
+  W ten sposób nie musisz ręcznie tagować obrazów kontenera (za pomocą Docker CLI).
+
 ## Aplikacja budowana jest automatycznie po każdym push do branch `master`
 
-- [ ] Kod aplikacji udostępniony jest w Code Repository
-- [ ] Cloud Build wykonuje build aplikacji po każdym push do brancha `master`
-- [ ] Wynikiem build jest obraz kontenera udostępniony w Container Registry
-- [ ] Nowa wersja aplikacji jest automatycznie deployowana gdy nowy obraz kontenera będzie dostępny
+- [X] Kod aplikacji udostępniony jest w Code Repository
+
+  ```bash
+  gcloud source repos create lpw9
+  gcloud source repos clone lpw9 # poza repozytorium `lp-workshops`
+  ```
+
+- [X] Cloud Build wykonuje build aplikacji po każdym push do brancha `master`. Wynikiem build jest obraz kontenera udostępniony w Container Registry
+
+  ```bash
+  touch cloudbuild.yaml
+
+  gcloud beta builds triggers create cloud-source-repositories --name="master-after-push-build-docker-image-eu" --repo="lpw9" --branch-pattern="master" --build-config=cloudbuild.yaml
+  ```
+
+- [X] Nowa wersja aplikacji jest automatycznie deployowana gdy nowy obraz kontenera będzie dostępny
+
+  W ustawieniach Cloud Run dla Service Account włącz uprawnienia Cloud Run Admin. W popup potwierdź nadanie uprawnień dla kont Service Account.
 
 ## Aplikacja łączy się z Cloud SQL
 
@@ -89,4 +111,5 @@
 
 # TODO
 
-- [ ] Enable APIs: run.googleapis.com, cloudbuild.googleapis.com
+- [ ] Enable APIs: run.googleapis.com cloudbuild.googleapis.com sourcerepo.googleapis.com
+- [ ] Przenieś wersję aplikacji do tego repozytorium

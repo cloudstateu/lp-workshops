@@ -11,6 +11,6 @@ RUN npm install
 # copy app source to destination container
 COPY . .
 
-ENV API_USER=testuser
+ENV SOME_VALUE=2
 
 CMD ["npm", "start"]

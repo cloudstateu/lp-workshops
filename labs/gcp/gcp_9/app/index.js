@@ -5,7 +5,7 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
-  res.json({ status: 'ok', data: { api: { user: process.env.API_USER || null } } });
+  res.json({ status: 'ok', data: { some_value: process.env.SOME_VALUE || null } });
 });
 
 // GET /greet?name=Joe

@@ -1,0 +1,13 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'eu.gcr.io/$PROJECT_ID/lpw9:latest', '-t', 'eu.gcr.io/$PROJECT_ID/lpw9:$COMMIT_SHA', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'eu.gcr.io/$PROJECT_ID/lpw9']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'testy', '--image', 'eu.gcr.io/$PROJECT_ID/lpw9:latest', '--region', 'europe-west3', '--platform', 'managed', '--allow-unauthenticated']
+images:
+- eu.gcr.io/$PROJECT_ID/lpw9:latest
