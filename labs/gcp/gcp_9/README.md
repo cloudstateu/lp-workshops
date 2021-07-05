@@ -84,9 +84,40 @@
 
 ## Aplikacja łączy się z Cloud SQL
 
-- [ ] Istnieje instancja Cloud SQL (schema "actors")
-- [ ] Cloud Run łączy się z Cloud SQL za pomocą credentials pobranych z Secret Manager
-- [ ] Cloud Run pobiera dane z bazy (endpoint `GET /winners`)
+- [X] Istnieje instancja Cloud SQL (schema "actors")
+
+  ```bash
+  gcloud sql instances create sql-instance --database-version=POSTGRES_13 --cpu=1 --memory=3840MiB --zone=europe-west3-a --root-password=password123
+  gcloud sql connect sql-instance --user=postgres
+  CREATE DATABASE lp_test;
+  \c lp_test
+
+  CREATE TABLE winners (
+    wid SERIAL PRIMARY KEY,
+    year INTEGER,
+    age INTEGER,
+    name varchar(500),
+    movie varchar(500)
+  );
+
+  gcloud sql import csv sql-instance gs://lpw9-x/data.csv --database=lp_test --table=winners
+  ```
+
+- [X] Cloud Run łączy się z Cloud SQL za pomocą credentials pobranych z Secret Manager
+
+  > Google recommends that you use Secret Manager to store sensitive information such as SQL credentials. You can pass secrets as environment variables or mount as a volume with Cloud Run.
+
+  Dodaj nowy sekret o nazwie INSTANCE_CONNECTION_NAME w [Secret Manager](https://console.cloud.google.com/security/secret-manager). Do sekretu dodaj role `Secret Manager Secret Accessor` dla wybranego Service Account (`gcloud run services describe <SERVICE_NAME>`).
+
+  Pobierz wartość `INSTANCE_CONNECTION_NAME`:
+
+  ```bash
+  gcloud sql instances describe sql-instance --format="table(connectionName)"
+  ```
+
+  Przejdź do [Cloud Run](https://console.cloud.google.com/run/). Kliknij Wykonaj nowy deploy. Skonfiguruj wartości (instancja Cloud SQL oraz Secret)
+
+- [X] Cloud Run pobiera dane z bazy (endpoint `GET /winners`)
 
 ## Aplikacja wdrażana jest na środowisko `prod`
 
@@ -107,9 +138,13 @@
 - [ ] Trace
 - [ ] Debug
 
+## Więcej
+
+- [ ] Przejście na Artifact Registry (dla separacji build & deploy; lepszego IAM)
+
 ---
 
 # TODO
 
-- [ ] Enable APIs: run.googleapis.com cloudbuild.googleapis.com sourcerepo.googleapis.com
+- [ ] Enable APIs: run.googleapis.com cloudbuild.googleapis.com sourcerepo.googleapis.com secretmanager.googleapis.com
 - [ ] Przenieś wersję aplikacji do tego repozytorium
