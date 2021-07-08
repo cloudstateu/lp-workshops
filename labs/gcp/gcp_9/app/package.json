@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/debug-agent": "^5.2.5",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "pg": "8.6.0"
+    "pg": "8.6.0",
+    "axios": "0.21.1"
   }
 }

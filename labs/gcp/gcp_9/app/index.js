@@ -1,6 +1,11 @@
+if (process.env.K_SERVICE) {
+  require('@google-cloud/debug-agent').start({ serviceContext: { enableCanary: true } });
+}
+
 const express = require("express");
 const morgan = require('morgan');
 const { Client } = require("pg");
+const axios = require('axios');
 
 const app = express();
 app.use(morgan('dev'));
@@ -37,7 +42,17 @@ app.get("/winners", async (_, res, next) => {
   }
 });
 
-const port = process.env.PORT || 8081;
+app.get("/external", async (_, res, next) => {
+  try {
+    const result = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
+    console.log(`Received result`, result.data);
+    res.json({ staus: 'ok', data: result.data });
+  } catch (err) {
+    next(err);
+  }
+});
+
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Running on http://localhost:${port}`);
 });

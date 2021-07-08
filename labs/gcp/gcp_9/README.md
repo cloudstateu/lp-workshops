@@ -45,6 +45,8 @@
    gcloud container images list-tags eu.gcr.io/training-w9-lpstudentXX/lpw9
    ```
 
+   Container Registry jest prywatnym rejestrem obrazów.
+
 - [X] Wdróż nową wersję aplikacji na Cloud Run (z obrazu przechowywanego na Container Registry)
 
    ```bash
@@ -119,32 +121,21 @@
 
 - [X] Cloud Run pobiera dane z bazy (endpoint `GET /winners`)
 
-## Aplikacja wdrażana jest na środowisko `prod`
-
-- [ ] Istnieje środowisko `prod` na którym działa aplikacja
-- [ ] Nowe wersje aplikacji są wdrażane na środowisko `prod` na żądanie
-- [ ] Aplikacja łączy się z inną instancją bazy danych (connection string jest przechowywany w Secret Manager)
 
 ## Zwiększenie security
 
-- [ ] Container Registry nie posiada publicznego adresu IP 
-- [ ] Obrazy do Container Registry może pushować tylko Code Repository
-- [ ] Obrazy w Container Registry są podpisane certyfikatem
-- [ ] Cloud Run uruchamia tylko obrazy podpisane certyfikatem
-- [ ] Zabezpieczenie aplikacji wymaganym logowaniem
+- [X] Obrazy do Container Registry może pushować tylko Code Repository
+
+  Odbierz nie dziedziczone uprawnienia do Cloud Storage Bucket z artefaktami. Pozostaw uprawnienia dla Service Accounts (nawet jeśli nie są dziedziczone).
 
 ## Monitoring
 
-- [ ] Trace
-- [ ] Debug
+- [X] Debug
 
-## Więcej
+  Przejdź do Code Repository, wybierz plik `index.js` i postaw breakpoint w wybranym miejscu (np. na linii `await client.connect();`). Odśwież stronę.
 
-- [ ] Przejście na Artifact Registry (dla separacji build & deploy; lepszego IAM)
+## Aplikacja wdrażana jest na środowisko `prod`
 
----
-
-# TODO
-
-- [ ] Enable APIs: run.googleapis.com cloudbuild.googleapis.com sourcerepo.googleapis.com secretmanager.googleapis.com
-- [ ] Przenieś wersję aplikacji do tego repozytorium
+- Istnieje środowisko `prod` na którym działa aplikacja
+- Nowe wersje aplikacji są wdrażane na środowisko `prod` na żądanie
+- Aplikacja łączy się z inną instancją bazy danych (connection string jest przechowywany w Secret Manager)
