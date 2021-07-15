@@ -1,0 +1,1897 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 910 535"
+   width="910"
+   height="535"
+   id="svg721"
+   sodipodi:docname="managing-infrastructure-as-code-infrastructure.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1761"
+     inkscape:window-height="875"
+     id="namedview723"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="196.69051"
+     inkscape:cy="312.37241"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Group_2559"
+     inkscape:snap-text-baseline="false" />
+  <defs
+     id="defs45">
+    <clipPath
+       id="inner_stroke_clip_path">
+      <path
+         d="M 6.3000016 256.6 L 110.3 256.6 L 110.3 351.9 L 6.3000016 351.9 Z"
+         id="path2" />
+    </clipPath>
+    <font-face
+       font-family="Roboto"
+       font-size="12"
+       panose-1="2 0 0 0 0 0 0 0 0 0"
+       units-per-em="1000"
+       underline-position="-73.24219"
+       underline-thickness="48.828125"
+       slope="0"
+       x-height="528.3203"
+       cap-height="710.9375"
+       ascent="927.7344"
+       descent="-244.14062"
+       font-weight="400"
+       id="font-face5">
+      <font-face-src>
+        <font-face-name
+           name="Roboto-Regular" />
+      </font-face-src>
+    </font-face>
+    <clipPath
+       id="inner_stroke_clip_path_2">
+      <path
+         d="M 159.9 49 L 271.9 49 L 271.9 105 L 159.9 105 Z"
+         id="path7" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_3">
+      <path
+         d="M 159.9 201 L 271.9 201 L 271.9 257 L 159.9 257 Z"
+         id="path10" />
+    </clipPath>
+    <font-face
+       font-family="Roboto"
+       font-size="10"
+       panose-1="2 0 0 0 0 0 0 0 0 0"
+       units-per-em="1000"
+       underline-position="-73.24219"
+       underline-thickness="48.828125"
+       slope="0"
+       x-height="528.3203"
+       cap-height="710.9375"
+       ascent="927.7344"
+       descent="-244.14062"
+       font-weight="400"
+       id="font-face13">
+      <font-face-src>
+        <font-face-name
+           name="Roboto-Regular" />
+      </font-face-src>
+    </font-face>
+    <clipPath
+       id="inner_stroke_clip_path_4">
+      <path
+         d="M 371.9 200.5 L 471.7 200.5 L 471.7 256.5 L 371.9 256.5 Z"
+         id="path15" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_5">
+      <path
+         d="M 371.9 390.6 L 471.7 390.6 L 471.7 446.6 L 371.9 446.6 Z"
+         id="path18" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_6">
+      <path
+         d="M 531.8 148 L 667.8 148 L 667.8 235 L 531.8 235 Z"
+         id="path21" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_7">
+      <path
+         d="M 707.7 148 L 843.7 148 L 843.7 235 L 707.7 235 Z"
+         id="path24" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_8">
+      <path
+         d="M 531.8 383 L 667.8 383 L 667.8 470 L 531.8 470 Z"
+         id="path27" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_9">
+      <path
+         d="M 707.7 383 L 843.7 383 L 843.7 470 L 707.7 470 Z"
+         id="path30" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_10">
+      <path
+         d="M 160 353 L 272 353 L 272 409 L 160 409 Z"
+         id="path33" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_11">
+      <path
+         d="M 160 429 L 272 429 L 272 485 L 160 485 Z"
+         id="path36" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_12">
+      <path
+         d="M 159.9 125 L 271.9 125 L 271.9 181 L 159.9 181 Z"
+         id="path39" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_13">
+      <path
+         d="M 160 277 L 272 277 L 272 333 L 160 333 Z"
+         id="path42" />
+    </clipPath>
+    <clipPath
+       id="inner_stroke_clip_path_10-3">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 160,353 h 112 v 56 H 160 Z"
+         id="path33-6" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata47"> Produced by OmniGraffle 7.8 
+    <dc:date>2019-06-07 13:12:43 +0000</dc:date>
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     style="fill:none;fill-opacity:1;stroke:none;stroke-dasharray:none;stroke-opacity:1"
+     id="Group_2559">
+    <g
+       id="Group_2276">
+      <g
+         id="Graphic_2278">
+        <rect
+           x="6.3000016"
+           y="256.60001"
+           width="104"
+           height="95.300003"
+           id="rect53"
+           style="fill:#ffffff" />
+        <rect
+           x="6.3000016"
+           y="256.60001"
+           width="104"
+           height="95.300003"
+           clip-path="url(#inner_stroke_clip_path)"
+           id="rect55"
+           style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(10.300002,306.6)"
+           id="text61"
+           style="fill:#212121">
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="14.411133"
+             y="11"
+             id="tspan57"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">Developer or</tspan>
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="25.327148"
+             y="25"
+             id="tspan59"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">operator</tspan>
+        </text>
+      </g>
+      <g
+         id="Graphic_2277">
+        <path
+           d="m 58.3,289.6 c 2.21,0 4,-1.79 4,-4 0,-2.21 -1.79,-4 -4,-4 -2.21,0 -4,1.79 -4,4 0,2.21 1.79,4 4,4 z m 0,2 c -2.67,0 -8,1.34 -8,4 v 2 h 16 v -2 c 0,-2.66 -5.33,-4 -8,-4 z"
+           id="path64"
+           inkscape:connector-curvature="0"
+           style="fill:#616161" />
+      </g>
+    </g>
+    <g
+       id="Graphic_2304">
+      <title
+         id="title68">zone external - grey</title>
+      <path
+         d="M 140.3,29 H 291.9 V 505 H 140.3 Z"
+         id="path70"
+         inkscape:connector-curvature="0"
+         style="stroke:#616161;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1, 3" />
+    </g>
+    <rect
+       x="159.89999"
+       y="49"
+       width="112"
+       height="56"
+       id="rect73"
+       style="fill:#ffffff" />
+    <g
+       id="Graphic_2290">
+      <rect
+         x="159.89999"
+         y="201"
+         width="112"
+         height="56"
+         id="rect90"
+         style="fill:#ffffff" />
+      <rect
+         x="159.89999"
+         y="201"
+         width="112"
+         height="56"
+         clip-path="url(#inner_stroke_clip_path_3)"
+         id="rect92"
+         style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+      <text
+         transform="translate(200.9,222)"
+         id="text96"
+         style="fill:#212121">
+        <tspan
+           font-size="12"
+           font-weight="400"
+           x="10.986328"
+           y="11"
+           id="tspan94"
+           style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">…</tspan>
+      </text>
+    </g>
+    <g
+       id="Graphic_2309">
+      <text
+         transform="translate(58.51795,121)"
+         id="text103"
+         style="fill:#757575">
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="9"
+           id="tspan99"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Pushes</tspan>
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="21"
+           id="tspan101"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Terraform code</tspan>
+      </text>
+    </g>
+    <g
+       id="Graphic_2311">
+      <text
+         transform="translate(58.51795,464.5)"
+         id="text110"
+         style="fill:#757575">
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="9"
+           id="tspan106"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Pushes</tspan>
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="21"
+           id="tspan108"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Terraform code</tspan>
+      </text>
+    </g>
+    <g
+       id="Graphic_2027">
+      <rect
+         x="351.89999"
+         y="5"
+         width="551.79999"
+         height="525"
+         id="rect113"
+         style="fill:#eaedef" />
+    </g>
+    <g
+       id="Group_2034">
+      <g
+         id="Group_2000">
+        <title
+           id="title116">GCP logo</title>
+        <g
+           id="Graphic_2019">
+          <title
+             id="title118">Fill-3</title>
+          <path
+             d="m 446.5829,30.734496 c 0,-3.229939 2.4411,-5.671651 5.6408,-5.671651 1.6381,0 3.01796,0.652027 3.9886,1.774278 l -0.97064,0.940447 c -0.75803,-0.940447 -1.77426,-1.379857 -3.01796,-1.379857 -2.28947,0 -4.21535,1.667662 -4.21535,4.336783 0,2.669121 1.92588,4.336784 4.21535,4.336784 1.3651,0 2.51754,-0.636622 3.3366,-1.57707 l 0.97,0.970646 c -0.95523,1.137042 -2.4867,1.941291 -4.3066,1.941291 -3.1997,0 -5.6408,-2.441713 -5.6408,-5.671651"
+             id="path120"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2018">
+          <title
+             id="title123">Fill-5</title>
+          <rect
+             x="457.62155"
+             y="25.305782"
+             width="1.3952644"
+             height="10.857671"
+             id="rect125"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2017">
+          <title
+             id="title128">Fill-7</title>
+          <path
+             d="m 466.3106,32.44807 c 0,-1.698475 -1.18265,-2.68391 -2.4263,-2.68391 -1.24367,0 -2.4263,0.985435 -2.4263,2.68391 0,1.698476 1.18263,2.68391 2.4263,2.68391 1.24365,0 2.4263,-0.985434 2.4263,-2.68391 m 1.39526,0 c 0,2.259293 -1.59246,3.95777 -3.82156,3.95777 -2.2291,0 -3.8216,-1.698477 -3.8216,-3.95777 0,-2.259293 1.5925,-3.95777 3.8216,-3.95777 2.2291,0 3.82156,1.698477 3.82156,3.95777"
+             id="path130"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2016">
+          <title
+             id="title133">Fill-8</title>
+          <path
+             d="m 474.0136,36.16327 v -1.03104 h -0.0604 c -0.40985,0.682223 -1.3349,1.273855 -2.3505,1.273855 -1.9111,0 -2.83616,-1.289265 -2.83616,-3.123938 v -4.5494 h 1.39526 v 4.321993 c 0,1.54687 0.77344,2.07749 1.8347,2.07749 1.21344,0 1.9567,-1.167858 1.9567,-2.3049 v -4.094583 h 1.3946 v 7.430523 z"
+             id="path135"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2015">
+          <title
+             id="title138">Fill-9</title>
+          <path
+             d="m 482.596,32.44807 c 0,-1.698475 -1.12226,-2.68391 -2.3659,-2.68391 -1.24306,0 -2.3653,1.015632 -2.3653,2.68391 0,1.668278 1.12224,2.68391 2.3653,2.68391 1.24364,0 2.3659,-0.985434 2.3659,-2.68391 m -6.1265,0 c 0,-2.2747 1.6529,-3.95777 3.5332,-3.95777 1.18324,0 2.1083,0.591017 2.5323,1.27386 h 0.061 l -0.061,-1.031043 v -3.427149 h 1.39524 V 36.163023 H 482.596 V 35.13198 h -0.061 c -0.424,0.682227 -1.34906,1.27386 -2.5323,1.27386 -1.8803,0 -3.5332,-1.68307 -3.5332,-3.95777"
+             id="path140"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2006">
+          <title
+             id="title143">Fill-18</title>
+          <path
+             d="m 393.9953,30.18853 c 0,-3.427148 2.8811,-6.21706 6.30826,-6.21706 1.89568,0 3.24534,0.74262 4.26098,1.713266 l -1.19744,1.198054 c -0.72845,-0.682226 -1.7139,-1.212845 -3.06354,-1.212845 -2.50211,0 -4.45819,2.016477 -4.45819,4.518585 0,2.50211 1.95608,4.519203 4.45819,4.519203 1.62267,0 2.54771,-0.652028 3.13874,-1.243659 0.4856,-0.485014 0.80424,-1.182647 0.92564,-2.138502 h -4.06438 v -1.697859 h 5.71664 c 0.061,0.303211 0.0912,0.666817 0.0912,1.061239 0,1.273858 -0.3488,2.850925 -1.47106,3.973176 -1.09144,1.137042 -2.4867,1.743462 -4.33678,1.743462 -3.42716,0 -6.30826,-2.78991 -6.30826,-6.21706"
+             id="path145"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2005">
+          <title
+             id="title148">Fill-19</title>
+          <path
+             d="m 410.7317,34.82877 c -1.2135,0 -2.2593,-1.000843 -2.2593,-2.426305 0,-1.440869 1.0458,-2.426305 2.2593,-2.426305 1.2128,0 2.25927,0.985436 2.25927,2.426305 0,1.425462 -1.04647,2.426305 -2.25927,2.426305 m 0,-6.429678 c -2.21432,0 -4.0188,1.683068 -4.0188,4.003373 0,2.304898 1.80448,4.003375 4.0188,4.003375 2.21367,0 4.01814,-1.698477 4.01814,-4.003375 0,-2.320305 -1.80447,-4.003373 -4.01814,-4.003373"
+             id="path150"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2004">
+          <title
+             id="title153">Fill-20</title>
+          <path
+             d="m 419.498,34.82877 c -1.21285,0 -2.2593,-1.000843 -2.2593,-2.426305 0,-1.440869 1.04645,-2.426305 2.2593,-2.426305 1.21284,0 2.2593,0.985436 2.2593,2.426305 0,1.425462 -1.04646,2.426305 -2.2593,2.426305 m 0,-6.429678 c -2.2143,0 -4.0188,1.683068 -4.0188,4.003373 0,2.304898 1.8045,4.003375 4.0188,4.003375 2.2137,0 4.0188,-1.698477 4.0188,-4.003375 0,-2.320305 -1.8051,-4.003373 -4.0188,-4.003373"
+             id="path155"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2003">
+          <title
+             id="title158">Fill-21</title>
+          <path
+             d="m 428.2414,34.82877 c -1.21286,0 -2.2291,-1.01625 -2.2291,-2.410898 0,-1.410672 1.01624,-2.441712 2.2291,-2.441712 1.19804,0 2.13787,1.03104 2.13787,2.441712 0,1.394648 -0.93983,2.410898 -2.13787,2.410898 z m 2.0171,-6.186863 v 0.652027 h -0.061 c -0.39443,-0.470224 -1.15247,-0.894842 -2.10767,-0.894842 -2.0017,0 -3.8364,1.758871 -3.8364,4.01878 0,2.243888 1.8347,3.987968 3.8364,3.987968 0.9552,0 1.71324,-0.42462 2.10767,-0.909635 h 0.061 v 0.576225 c 0,1.531462 -0.81906,2.3505 -2.1385,2.3505 -1.07667,0 -1.7441,-0.773433 -2.0165,-1.42546 l -1.5321,0.63662 C 425.01145,38.695946 426.1793,40 428.12,40 c 2.0627,0 3.80614,-1.21346 3.80614,-4.170386 v -7.187707 z"
+             id="path160"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2002">
+          <title
+             id="title163">Fill-22</title>
+          <rect
+             x="433.13971"
+             y="24.396151"
+             width="1.7588712"
+             height="11.767305"
+             id="rect165"
+             style="fill:#757575" />
+        </g>
+        <g
+           id="Graphic_2001">
+          <title
+             id="title168">Fill-23</title>
+          <path
+             d="m 439.58413,29.94596 c 0.69763,0 1.28927,0.348818 1.48587,0.84924 l -3.57815,1.485857 c -0.0456,-1.54687 1.19745,-2.335097 2.09228,-2.335097 m 0.13682,4.88281 c -0.89485,0 -1.53208,-0.40921 -1.94129,-1.212844 l 5.35304,-2.214306 -0.1818,-0.454815 c -0.33404,-0.894843 -1.3497,-2.547713 -3.42716,-2.547713 -2.0627,0 -3.77597,1.622673 -3.77597,4.003373 0,2.244502 1.69848,4.003375 3.97318,4.003375 1.83465,0 2.89591,-1.122253 3.33595,-1.77428 l -1.3651,-0.909633 c -0.4548,0.667433 -1.07663,1.106843 -1.97085,1.106843"
+             id="path170"
+             inkscape:connector-curvature="0"
+             style="fill:#757575" />
+        </g>
+      </g>
+      <g
+         id="Group_2029">
+        <g
+           id="Graphic_2033">
+          <path
+             d="m 380.35085,26.65106 0.67225,0.01255 1.8272,-1.827219 0.089,-0.773801 c -1.4517,-1.29195 -3.36225,-2.078305 -5.45425,-2.078305 -3.78795,0 -6.98245,2.57591 -7.92975,6.068286 0.19973,-0.138096 0.62544,-0.03538 0.62544,-0.03538 l 3.65216,-0.600323 c 0,0 0.18945,-0.310433 0.2819,-0.291033 0.83543,-0.91418 2.0372,-1.489394 3.37025,-1.489394 1.08425,0 2.08175,0.381194 2.8658,1.014614 z"
+             id="path174"
+             inkscape:connector-curvature="0"
+             style="fill:#ea4335" />
+        </g>
+        <g
+           id="Graphic_2032">
+          <path
+             d="m 385.4171,28.05714 c -0.42344,-1.56586 -1.29996,-2.946833 -2.4789,-3.995686 l -2.5885,2.588466 c 1.0363,0.837713 1.70055,2.11825 1.70055,3.551722 v 0.456518 c 1.25885,0 2.2826,1.023747 2.2826,2.2826 0,1.258852 -1.02375,2.282597 -2.2826,2.282597 h -4.5652 l -0.45652,0.458803 v 2.739117 l 0.45652,0.454237 h 4.5652 c 3.2721,0 5.93475,-2.66265 5.93475,-5.934754 0,-2.023524 -1.01804,-3.81194 -2.5679,-4.88362 z"
+             id="path177"
+             inkscape:connector-curvature="0"
+             style="fill:#4285f4" />
+        </g>
+        <g
+           id="Graphic_2031">
+          <path
+             d="m 372.91986,38.875514 h 4.56177 v -3.652157 h -4.56177 c -0.33556,0 -0.65283,-0.07418 -0.94043,-0.205433 l -0.65739,0.20201 -1.82836,1.82836 -0.15978,0.617443 c 0.99635,0.757823 2.23922,1.209777 3.58596,1.209777 z"
+             id="path180"
+             inkscape:connector-curvature="0"
+             style="fill:#34a853" />
+        </g>
+        <g
+           id="Graphic_2030">
+          <path
+             d="m 372.91986,27.006005 c -3.27211,0 -5.93476,2.66265 -5.93476,5.934755 0,1.926512 0.9233,3.641885 2.35108,4.72612 l 2.64667,-2.646674 c -0.79205,-0.358366 -1.34559,-1.154996 -1.34559,-2.079446 0,-1.258853 1.02374,-2.2826 2.2826,-2.2826 0.92444,0 1.72108,0.55353 2.07944,1.345593 l 2.64668,-2.646673 c -1.08424,-1.427764 -2.79961,-2.351075 -4.72612,-2.351075 z"
+             id="path183"
+             inkscape:connector-curvature="0"
+             style="fill:#fbbc05" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="Group_2322">
+      <title
+         id="title188">Container Builder</title>
+      <g
+         id="Graphic_2331">
+        <rect
+           x="371.89999"
+           y="200.5"
+           width="99.800003"
+           height="56"
+           id="rect190"
+           style="fill:#ffffff" />
+        <rect
+           x="371.89999"
+           y="200.5"
+           width="99.800003"
+           height="56"
+           clip-path="url(#inner_stroke_clip_path_4)"
+           id="rect192"
+           style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(422.9,214.5)"
+           id="text198"
+           style="fill:#212121">
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="0"
+             y="11"
+             id="tspan194"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">Cloud</tspan>
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="0"
+             y="25"
+             id="tspan196"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">Build</tspan>
+        </text>
+      </g>
+      <g
+         id="Group_2323">
+        <title
+           id="title201">Container Builder</title>
+        <g
+           id="Graphic_2330">
+          <title
+             id="title203">Fill-1</title>
+          <path
+             d="m 415.5662,227.21375 -5.75403,-10.00607 c -0.46134,-0.79888 -1.2974,-1.28581 -2.15777,-1.28581 h -11.5082 c -0.92204,0 -1.72726,0.54053 -2.15797,1.28515 l -5.75403,9.98618 c -0.4609,0.79864 -0.42982,1.7561 -6.4e-4,2.5016 l 5.75424,10.0518 c 0.4611,0.79866 1.2974,1.33153 2.15774,1.33153 h 11.50801 c 0.92245,0 1.72745,-0.58121 2.15819,-1.32583 l 5.754,-10.00652 c 0.46113,-0.79888 0.42986,-1.78675 4.6e-4,-2.53203"
+             id="path205"
+             inkscape:connector-curvature="0"
+             style="fill:#4285f4" />
+        </g>
+        <g
+           id="Graphic_2329">
+          <title
+             id="title208">Fill-4</title>
+          <path
+             d="m 414.39993,231.7886 -6.99473,-6.99475 -5.5051,-1.81738 -5.48734,1.81693 3.30269,3.3027 0.006,0.21262 -1.19593,-1.1959 -2.58672,4.84706 9.11815,9.11817 h 2.60555 c 0.92225,0 1.72745,-0.58122 2.15819,-1.32563 z"
+             id="path210"
+             inkscape:connector-curvature="0"
+             style="fill:#000000;fill-opacity:0.07000002" />
+        </g>
+        <g
+           id="Graphic_2328">
+          <title
+             id="title213">Fill-6</title>
+          <path
+             d="m 401.9086,231.31407 2.4255,-1.40022 v -2.80065 l -0.8155,-0.47076 -2.4255,4.20088 z"
+             id="path215"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2327">
+          <title
+             id="title218">Fill-8</title>
+          <path
+             d="m 399.4832,227.1131 v 2.80066 l 0.8155,0.47074 2.42527,-4.20087 -0.81527,-0.47075 z"
+             id="path220"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2326">
+          <title
+             id="title223">Fill-10</title>
+          <path
+             d="m 401.4325,232.14497 -2.90696,-1.67847 v -3.35366 l -2.5865,-1.49341 v 6.34047 l 5.49346,3.17166 z"
+             id="path225"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2325">
+          <title
+             id="title228">Fill-12</title>
+          <path
+             d="m 398.9993,226.28677 2.90937,-1.67977 2.91003,1.6802 2.5865,-1.49318 -5.49653,-3.17362 -5.49587,3.17297 z"
+             id="path230"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2324">
+          <title
+             id="title233">Fill-14</title>
+          <path
+             d="m 405.2916,227.11365 v 3.353 l -2.907,1.67825 v 2.98682 l 5.4935,-3.17166 v -6.33982 z"
+             id="path235"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="Group_2334">
+      <title
+         id="title240">Container Builder</title>
+      <g
+         id="Graphic_2343">
+        <rect
+           x="371.89999"
+           y="390.60001"
+           width="99.800003"
+           height="56"
+           id="rect242"
+           style="fill:#ffffff" />
+        <rect
+           x="371.89999"
+           y="390.60001"
+           width="99.800003"
+           height="56"
+           clip-path="url(#inner_stroke_clip_path_5)"
+           id="rect244"
+           style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(422.9,404.6)"
+           id="text250"
+           style="fill:#212121">
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="0"
+             y="11"
+             id="tspan246"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">Cloud</tspan>
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="0"
+             y="25"
+             id="tspan248"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">Build</tspan>
+        </text>
+      </g>
+      <g
+         id="Group_2335">
+        <title
+           id="title253">Container Builder</title>
+        <g
+           id="Graphic_2342">
+          <title
+             id="title255">Fill-1</title>
+          <path
+             d="m 415.5662,417.31376 -5.75403,-10.00606 c -0.46134,-0.7989 -1.2974,-1.28583 -2.15777,-1.28583 h -11.5082 c -0.92204,0 -1.72726,0.54053 -2.15797,1.28516 l -5.75403,9.98617 c -0.4609,0.79865 -0.42982,1.7561 -6.4e-4,2.5016 l 5.75424,10.0518 c 0.4611,0.79867 1.2974,1.33154 2.15774,1.33154 h 11.50801 c 0.92245,0 1.72745,-0.58124 2.15819,-1.32584 l 5.754,-10.0065 c 0.46113,-0.7989 0.42986,-1.78676 4.6e-4,-2.53204"
+             id="path257"
+             inkscape:connector-curvature="0"
+             style="fill:#4285f4" />
+        </g>
+        <g
+           id="Graphic_2341">
+          <title
+             id="title260">Fill-4</title>
+          <path
+             d="m 414.39993,421.8886 -6.99473,-6.99475 -5.5051,-1.81735 -5.48734,1.8169 3.30269,3.3027 0.006,0.21263 -1.19593,-1.19593 -2.58672,4.8471 9.11815,9.11815 h 2.60555 c 0.92225,0 1.72745,-0.58122 2.15819,-1.32562 z"
+             id="path262"
+             inkscape:connector-curvature="0"
+             style="fill:#000000;fill-opacity:0.07000002" />
+        </g>
+        <g
+           id="Graphic_2340">
+          <title
+             id="title265">Fill-6</title>
+          <path
+             d="m 401.9086,421.41407 2.4255,-1.40022 v -2.80065 l -0.8155,-0.47075 -2.4255,4.20085 z"
+             id="path267"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2339">
+          <title
+             id="title270">Fill-8</title>
+          <path
+             d="m 399.4832,417.2131 v 2.80067 l 0.8155,0.47073 2.42527,-4.20086 -0.81527,-0.47074 z"
+             id="path272"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2338">
+          <title
+             id="title275">Fill-10</title>
+          <path
+             d="m 401.4325,422.245 -2.90696,-1.6785 v -3.35365 l -2.5865,-1.49341 v 6.34046 l 5.49346,3.17167 z"
+             id="path277"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2337">
+          <title
+             id="title280">Fill-12</title>
+          <path
+             d="m 398.9993,416.3868 2.90937,-1.6798 2.91003,1.6802 2.5865,-1.49317 -5.49653,-3.17363 -5.49587,3.17297 z"
+             id="path282"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="Graphic_2336">
+          <title
+             id="title285">Fill-14</title>
+          <path
+             d="m 405.2916,417.21366 v 3.353 l -2.907,1.67824 v 2.9868 l 5.4935,-3.17163 v -6.33982 z"
+             id="path287"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="Graphic_2348">
+      <text
+         transform="translate(303.4,209)"
+         id="text294"
+         style="fill:#757575">
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="9"
+           id="tspan292"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Triggers</tspan>
+      </text>
+    </g>
+    <g
+       id="Graphic_2352">
+      <text
+         transform="translate(303.45,399)"
+         id="text299"
+         style="fill:#757575">
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="9"
+           id="tspan297"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Triggers</tspan>
+      </text>
+    </g>
+    <g
+       id="Group_2446">
+      <g
+         id="Graphic_2364">
+        <title
+           id="title302">zone internal - blue</title>
+        <rect
+           x="511.70001"
+           y="60"
+           width="372"
+           height="215"
+           id="rect304"
+           style="fill:#e1f6fe" />
+        <rect
+           x="511.70001"
+           y="60"
+           width="372"
+           height="215"
+           id="rect306"
+           style="stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(521.7,75)"
+           id="text310"
+           style="fill:#757575">
+          <tspan
+             font-size="10"
+             font-weight="400"
+             x="0"
+             y="9"
+             id="tspan308"
+             style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">VPC Network: dev</tspan>
+        </text>
+      </g>
+      <g
+         id="Graphic_2405">
+        <title
+           id="title313">zone internal - purple</title>
+        <rect
+           x="687.70001"
+           y="104"
+           width="176"
+           height="151"
+           id="rect315"
+           style="fill:#ede7f7" />
+        <rect
+           x="687.70001"
+           y="104"
+           width="176"
+           height="151"
+           id="rect317"
+           style="stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(697.7,119)"
+           id="text321"
+           style="fill:#757575">
+          <tspan
+             font-size="10"
+             font-weight="400"
+             x="0"
+             y="9"
+             id="tspan319"
+             style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Subnet: dev-subnet-01</tspan>
+        </text>
+      </g>
+      <g
+         id="Group_2382">
+        <title
+           id="title324">Cloud firewall rules</title>
+        <g
+           id="Graphic_2401">
+          <rect
+             x="531.79999"
+             y="148"
+             width="136"
+             height="87"
+             id="rect326"
+             style="fill:#ffffff" />
+          <rect
+             x="531.79999"
+             y="148"
+             width="136"
+             height="87"
+             clip-path="url(#inner_stroke_clip_path_6)"
+             id="rect328"
+             style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        </g>
+        <g
+           id="Graphic_2400">
+          <rect
+             x="547.79999"
+             y="196"
+             width="104"
+             height="1"
+             id="rect331"
+             style="fill:#dfdfdf" />
+        </g>
+        <g
+           id="Graphic_2399">
+          <text
+             transform="translate(575.8,203.5)"
+             id="text338"
+             style="fill:#757575">
+            <tspan
+               font-size="10"
+               font-weight="400"
+               x="0"
+               y="9"
+               id="tspan334"
+               style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Cloud</tspan>
+            <tspan
+               font-size="10"
+               font-weight="400"
+               x="0"
+               y="20"
+               id="tspan336"
+               style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">firewall rules</tspan>
+          </text>
+        </g>
+        <g
+           id="Graphic_2398">
+          <text
+             transform="translate(547.8,160)"
+             id="text345"
+             style="fill:#212121">
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="40.875977"
+               y="11"
+               id="tspan341"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">dev-</tspan>
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="25.647461"
+               y="25"
+               id="tspan343"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">allow-http</tspan>
+          </text>
+        </g>
+        <g
+           id="Group_2383">
+          <title
+             id="title348">Cloud firewall rules</title>
+          <g
+             id="Graphic_2397">
+            <title
+               id="title350">Fill-1</title>
+            <path
+               d="m 567.5959,214.07965 -4.11714,-7.15962 C 563.14865,206.34842 562.5504,206 561.9348,206 h -8.2344 c -0.65976,0 -1.2359,0.38677 -1.5441,0.91957 l -4.11716,7.14537 c -0.32979,0.57146 -0.30754,1.25656 -4.4e-4,1.78998 l 4.1173,7.19233 C 552.4859,223.6187 553.0843,224 553.6999,224 h 8.2343 c 0.66005,0 1.23605,-0.41588 1.54425,-0.94868 l 4.11715,-7.15992 c 0.32994,-0.57163 0.30756,-1.27848 3e-4,-1.81175"
+               id="path352"
+               inkscape:connector-curvature="0"
+               style="fill:#4285f4" />
+          </g>
+          <g
+             id="Graphic_2396">
+            <title
+               id="title355">Fill-4</title>
+            <path
+               d="m 561.72606,211.0882 -3.47682,0.86994 -0.86994,-0.86994 -3.4768,0.86994 0.884,0.88404 -0.884,0.85445 0.94975,0.94977 -0.94975,0.7823 0.9936,0.9936 -0.9936,0.751 0.9983,0.99828 -0.9983,0.7402 5.0882,5.0882 h 2.94353 c 0.66007,0 1.23607,-0.41588 1.54427,-0.94868 l 3.7277,-6.48297 z"
+               id="path357"
+               inkscape:connector-curvature="0"
+               style="fill:#000000;fill-opacity:0.07000002" />
+          </g>
+          <g
+             id="Graphic_2395">
+            <title
+               id="title360">Fill-6</title>
+            <rect
+               x="553.90253"
+               y="211.0882"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect362"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2394">
+            <title
+               id="title365">Fill-8</title>
+            <rect
+               x="553.90253"
+               y="218.04182"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect367"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2393">
+            <title
+               id="title370">Fill-9</title>
+            <rect
+               x="553.90253"
+               y="214.565"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect372"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2392">
+            <title
+               id="title375">Fill-10</title>
+            <rect
+               x="558.24927"
+               y="211.0882"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect377"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2391">
+            <title
+               id="title380">Fill-11</title>
+            <rect
+               x="558.24927"
+               y="218.04182"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect382"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2390">
+            <title
+               id="title385">Fill-12</title>
+            <rect
+               x="558.24927"
+               y="214.565"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect387"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2389">
+            <title
+               id="title390">Fill-13</title>
+            <rect
+               x="556.07593"
+               y="212.82652"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect392"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2388">
+            <title
+               id="title395">Fill-14</title>
+            <rect
+               x="556.07593"
+               y="216.30334"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect397"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2387">
+            <title
+               id="title400">Fill-15</title>
+            <rect
+               x="553.90253"
+               y="212.82652"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect402"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2386">
+            <title
+               id="title405">Fill-16</title>
+            <rect
+               x="553.90253"
+               y="216.30334"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect407"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2385">
+            <title
+               id="title410">Fill-17</title>
+            <rect
+               x="560.42273"
+               y="212.82652"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect412"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2384">
+            <title
+               id="title415">Fill-18</title>
+            <rect
+               x="560.42273"
+               y="216.30334"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect417"
+               style="fill:#ffffff" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="Group_2436">
+        <title
+           id="title422">Compute Engine</title>
+        <g
+           id="Graphic_2445">
+          <rect
+             x="707.70001"
+             y="148"
+             width="136"
+             height="87"
+             id="rect424"
+             style="fill:#ffffff" />
+          <rect
+             x="707.70001"
+             y="148"
+             width="136"
+             height="87"
+             clip-path="url(#inner_stroke_clip_path_7)"
+             id="rect426"
+             style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        </g>
+        <g
+           id="Graphic_2444">
+          <rect
+             x="723.70001"
+             y="196"
+             width="104"
+             height="1"
+             id="rect429"
+             style="fill:#dfdfdf" />
+        </g>
+        <g
+           id="Graphic_2443">
+          <text
+             transform="translate(751.7,209)"
+             id="text434"
+             style="fill:#757575">
+            <tspan
+               font-size="10"
+               font-weight="400"
+               x="0"
+               y="9"
+               id="tspan432"
+               style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Compute Engine</tspan>
+          </text>
+        </g>
+        <g
+           id="Graphic_2442">
+          <text
+             transform="translate(723.7,160)"
+             id="text441"
+             style="fill:#212121">
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="40.875977"
+               y="11"
+               id="tspan437"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">dev-</tspan>
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="4.7441406"
+               y="25"
+               id="tspan439"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">apache2-instance</tspan>
+          </text>
+        </g>
+        <g
+           id="Group_2437">
+          <title
+             id="title444">Compute Engine</title>
+          <g
+             id="Graphic_2441">
+            <title
+               id="title446">Fill-1</title>
+            <path
+               d="m 743.4959,214.07965 -4.1171,-7.15962 C 739.0487,206.34842 738.45045,206 737.83485,206 h -8.23445 c -0.6597,0 -1.2359,0.38677 -1.5441,0.91957 l -4.1171,7.14537 c -0.3298,0.57146 -0.3076,1.25656 -5e-4,1.78998 l 4.1173,7.19233 C 728.38595,223.6187 728.9843,224 729.5999,224 h 8.2343 c 0.6601,0 1.2361,-0.41588 1.5443,-0.94868 l 4.1171,-7.15992 c 0.33,-0.57163 0.3076,-1.27848 3e-4,-1.81175"
+               id="path448"
+               inkscape:connector-curvature="0"
+               style="fill:#4285f4" />
+          </g>
+          <g
+             id="Graphic_2440">
+            <title
+               id="title451">Fill-4</title>
+            <path
+               d="m 742.3143,217.94572 -6.7757,-6.77567 -0.4858,1.05167 -1.0566,-1.05652 -0.4891,1.04682 -1.04415,-1.04432 -0.25685,1.26595 -0.9294,0.15981 -0.1929,0.82659 -1.2025,0.28722 1.0775,1.0775 -1.0659,0.47473 1.0659,1.0659 -1.0728,0.45815 7.21625,7.21643 h 0.73205 c 0.6599,0 1.2361,-0.41588 1.54425,-0.94868 z"
+               id="path453"
+               inkscape:connector-curvature="0"
+               style="fill:#000000;fill-opacity:0.07000002" />
+          </g>
+          <g
+             id="Graphic_2439">
+            <title
+               id="title456">Fill-7</title>
+            <path
+               d="m 734.63,213.91926 -1.7856,1.6e-4 c -0.1049,3.1e-4 -0.1899,0.0851 -0.1902,0.19002 l 2e-4,1.78529 c 4.4e-4,0.10487 0.0851,0.1897 0.19,0.19033 h 1.7854 c 0.1049,-4.7e-4 0.1897,-0.0855 0.1902,-0.19033 v -1.78529 c -3e-4,-0.10487 -0.0851,-0.18986 -0.19,-0.19018"
+               id="path458"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2438">
+            <title
+               id="title461">Fill-9</title>
+            <path
+               d="m 735.9467,217.21175 h -4.4193 v -4.4194 l 4.4196,-1.5e-4 z m 1.5099,-3.43645 c 0.0941,-3e-4 0.1703,-0.0765 0.1706,-0.1706 v -0.27798 c -3e-4,-0.0941 -0.0765,-0.17014 -0.1706,-0.17045 h -0.8685 v -0.81187 c -6e-4,-0.10472 -0.0853,-0.18956 -0.19,-0.19003 h -0.8152 l 2e-4,-0.87182 c -5e-4,-0.0941 -0.0767,-0.16999 -0.1706,-0.17045 l -0.2782,3e-4 c -0.0939,3.2e-4 -0.1701,0.0762 -0.1706,0.17015 l 3e-4,0.87167 h -0.9172 v -0.87182 c -5e-4,-0.0939 -0.0765,-0.17 -0.17044,-0.17046 l -0.27826,3.1e-4 c -0.0941,3.1e-4 -0.1702,0.0764 -0.17065,0.1703 l 3.5e-4,0.87167 -0.91725,1.5e-4 v -0.87197 c -4.5e-4,-0.0939 -0.0765,-0.17 -0.17045,-0.17046 l -0.2783,3.1e-4 c -0.0939,3.1e-4 -0.17,0.0764 -0.17045,0.1703 l 1.5e-4,0.87182 h -0.815 c -0.1049,3.2e-4 -0.1897,0.085 -0.1902,0.18986 v 0.81187 h -0.8685 c -0.0939,4.8e-4 -0.17,0.0765 -0.1705,0.17046 l 3e-4,0.27846 c 3.6e-4,0.0939 0.0764,0.16998 0.1703,0.17028 h 0.8684 l 2e-4,0.91739 -0.8687,-3.2e-4 c -0.0939,4.7e-4 -0.17,0.0765 -0.1703,0.17045 l 1e-4,0.27814 c 2e-4,0.0941 0.0763,0.17014 0.1703,0.17046 h 0.8686 v 0.91738 l -0.8687,-1.7e-4 c -0.0939,4.7e-4 -0.17,0.0765 -0.1703,0.17046 l 1e-4,0.27798 c 2e-4,0.0941 0.0763,0.17029 0.1703,0.17061 h 0.8686 v 0.81219 c 4.5e-4,0.10487 0.0853,0.18955 0.19,0.19002 h 0.815 v 0.87151 c 3e-4,0.0941 0.0764,0.1703 0.17046,0.1706 h 0.27794 c 0.0941,-3e-4 0.1702,-0.0767 0.1703,-0.1706 l 2e-4,-0.87151 h 0.91705 l 1.5e-4,0.87151 c 2e-4,0.0941 0.0764,0.1703 0.1706,0.1706 h 0.278 c 0.0941,-3e-4 0.1701,-0.0767 0.1703,-0.1706 l 1.5e-4,-0.87151 h 0.91705 l 2e-4,0.87151 c 3e-4,0.0941 0.0764,0.1703 0.1706,0.1706 h 0.2778 c 0.0941,-3e-4 0.17046,-0.0765 0.1706,-0.1706 l 2e-4,-0.87151 h 0.8148 c 0.1047,-4.7e-4 0.1896,-0.0851 0.19,-0.19002 l 2e-4,-0.81219 0.8685,-1.6e-4 c 0.0941,-1.6e-4 0.1703,-0.0762 0.1706,-0.1703 v -0.27798 c -10e-5,-0.0941 -0.0765,-0.17029 -0.1706,-0.17044 h -0.8685 v -0.91738 l 0.8685,-1.6e-4 c 0.0941,-1.6e-4 0.1703,-0.0762 0.1706,-0.1703 v -0.27782 c -3e-4,-0.0941 -0.0765,-0.17045 -0.1706,-0.17061 h -0.8685 v -0.91723 z"
+               id="path463"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="Group_2447">
+      <g
+         id="Graphic_2479">
+        <title
+           id="title469">zone internal - blue</title>
+        <rect
+           x="511.70001"
+           y="295"
+           width="372"
+           height="215"
+           id="rect471"
+           style="fill:#e1f6fe" />
+        <rect
+           x="511.70001"
+           y="295"
+           width="372"
+           height="215"
+           id="rect473"
+           style="stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(521.7,310)"
+           id="text477"
+           style="fill:#757575">
+          <tspan
+             font-size="10"
+             font-weight="400"
+             x="0"
+             y="9"
+             id="tspan475"
+             style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">VPC Network: prod</tspan>
+        </text>
+      </g>
+      <g
+         id="Graphic_2478">
+        <title
+           id="title480">zone internal - purple</title>
+        <rect
+           x="687.70001"
+           y="339"
+           width="176"
+           height="151"
+           id="rect482"
+           style="fill:#ede7f7" />
+        <rect
+           x="687.70001"
+           y="339"
+           width="176"
+           height="151"
+           id="rect484"
+           style="stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(697.7,354)"
+           id="text488"
+           style="fill:#757575">
+          <tspan
+             font-size="10"
+             font-weight="400"
+             x="0"
+             y="9"
+             id="tspan486"
+             style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Subnet: prod-subnet-01</tspan>
+        </text>
+      </g>
+      <g
+         id="Group_2458">
+        <title
+           id="title491">Cloud firewall rules</title>
+        <g
+           id="Graphic_2477">
+          <rect
+             x="531.79999"
+             y="383"
+             width="136"
+             height="87"
+             id="rect493"
+             style="fill:#ffffff" />
+          <rect
+             x="531.79999"
+             y="383"
+             width="136"
+             height="87"
+             clip-path="url(#inner_stroke_clip_path_8)"
+             id="rect495"
+             style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        </g>
+        <g
+           id="Graphic_2476">
+          <rect
+             x="547.79999"
+             y="431"
+             width="104"
+             height="1"
+             id="rect498"
+             style="fill:#dfdfdf" />
+        </g>
+        <g
+           id="Graphic_2475">
+          <text
+             transform="translate(575.8,438.5)"
+             id="text505"
+             style="fill:#757575">
+            <tspan
+               font-size="10"
+               font-weight="400"
+               x="0"
+               y="9"
+               id="tspan501"
+               style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Cloud</tspan>
+            <tspan
+               font-size="10"
+               font-weight="400"
+               x="0"
+               y="20"
+               id="tspan503"
+               style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">firewall rules</tspan>
+          </text>
+        </g>
+        <g
+           id="Graphic_2474">
+          <text
+             transform="translate(547.8,395)"
+             id="text512"
+             style="fill:#212121">
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="38.142578"
+               y="11"
+               id="tspan508"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">prod-</tspan>
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="25.647461"
+               y="25"
+               id="tspan510"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">allow-http</tspan>
+          </text>
+        </g>
+        <g
+           id="Group_2459">
+          <title
+             id="title515">Cloud firewall rules</title>
+          <g
+             id="Graphic_2473">
+            <title
+               id="title517">Fill-1</title>
+            <path
+               d="m 567.5959,449.07965 -4.11714,-7.15962 C 563.14865,441.3484 562.5504,441 561.9348,441 h -8.2344 c -0.65976,0 -1.2359,0.38677 -1.5441,0.91957 l -4.11716,7.14537 c -0.32979,0.57146 -0.30754,1.25656 -4.4e-4,1.78996 l 4.1173,7.19235 C 552.4859,458.6187 553.0843,459 553.6999,459 h 8.2343 c 0.66005,0 1.23605,-0.4159 1.54425,-0.9487 l 4.11715,-7.1599 c 0.32994,-0.5716 0.30756,-1.2785 3e-4,-1.81175"
+               id="path519"
+               inkscape:connector-curvature="0"
+               style="fill:#4285f4" />
+          </g>
+          <g
+             id="Graphic_2472">
+            <title
+               id="title522">Fill-4</title>
+            <path
+               d="m 561.72606,446.0882 -3.47682,0.86994 -0.86994,-0.86994 -3.4768,0.86994 0.884,0.88406 -0.884,0.85443 0.94975,0.94977 -0.94975,0.7823 0.9936,0.9936 -0.9936,0.751 0.9983,0.9983 -0.9983,0.7402 5.0882,5.0882 h 2.94353 c 0.66007,0 1.23607,-0.4159 1.54427,-0.9487 l 3.7277,-6.48297 z"
+               id="path524"
+               inkscape:connector-curvature="0"
+               style="fill:#000000;fill-opacity:0.07000002" />
+          </g>
+          <g
+             id="Graphic_2471">
+            <title
+               id="title527">Fill-6</title>
+            <rect
+               x="553.90253"
+               y="446.0882"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect529"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2470">
+            <title
+               id="title532">Fill-8</title>
+            <rect
+               x="553.90253"
+               y="453.04184"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect534"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2469">
+            <title
+               id="title537">Fill-9</title>
+            <rect
+               x="553.90253"
+               y="449.565"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect539"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2468">
+            <title
+               id="title542">Fill-10</title>
+            <rect
+               x="558.24927"
+               y="446.0882"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect544"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2467">
+            <title
+               id="title547">Fill-11</title>
+            <rect
+               x="558.24927"
+               y="453.04184"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect549"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2466">
+            <title
+               id="title552">Fill-12</title>
+            <rect
+               x="558.24927"
+               y="449.565"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect554"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2465">
+            <title
+               id="title557">Fill-13</title>
+            <rect
+               x="556.07593"
+               y="447.82651"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect559"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2464">
+            <title
+               id="title562">Fill-14</title>
+            <rect
+               x="556.07593"
+               y="451.30334"
+               width="3.4768174"
+               height="0.86994779"
+               id="rect564"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2463">
+            <title
+               id="title567">Fill-15</title>
+            <rect
+               x="553.90253"
+               y="447.82651"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect569"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2462">
+            <title
+               id="title572">Fill-16</title>
+            <rect
+               x="553.90253"
+               y="451.30334"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect574"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2461">
+            <title
+               id="title577">Fill-17</title>
+            <rect
+               x="560.42273"
+               y="447.82651"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect579"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2460">
+            <title
+               id="title582">Fill-18</title>
+            <rect
+               x="560.42273"
+               y="451.30334"
+               width="1.3033565"
+               height="0.86994779"
+               id="rect584"
+               style="fill:#ffffff" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="Group_2448">
+        <title
+           id="title589">Compute Engine</title>
+        <g
+           id="Graphic_2457">
+          <rect
+             x="707.70001"
+             y="383"
+             width="136"
+             height="87"
+             id="rect591"
+             style="fill:#ffffff" />
+          <rect
+             x="707.70001"
+             y="383"
+             width="136"
+             height="87"
+             clip-path="url(#inner_stroke_clip_path_9)"
+             id="rect593"
+             style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        </g>
+        <g
+           id="Graphic_2456">
+          <rect
+             x="723.70001"
+             y="431"
+             width="104"
+             height="1"
+             id="rect596"
+             style="fill:#dfdfdf" />
+        </g>
+        <g
+           id="Graphic_2455">
+          <text
+             transform="translate(751.7,444)"
+             id="text601"
+             style="fill:#757575">
+            <tspan
+               font-size="10"
+               font-weight="400"
+               x="0"
+               y="9"
+               id="tspan599"
+               style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Compute Engine</tspan>
+          </text>
+        </g>
+        <g
+           id="Graphic_2454">
+          <text
+             transform="translate(723.7,395)"
+             id="text608"
+             style="fill:#212121">
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="38.142578"
+               y="11"
+               id="tspan604"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">prod-</tspan>
+            <tspan
+               font-size="12"
+               font-weight="400"
+               x="4.7441406"
+               y="25"
+               id="tspan606"
+               style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">apache2-instance</tspan>
+          </text>
+        </g>
+        <g
+           id="Group_2449">
+          <title
+             id="title611">Compute Engine</title>
+          <g
+             id="Graphic_2453">
+            <title
+               id="title613">Fill-1</title>
+            <path
+               d="m 743.4959,449.07965 -4.1171,-7.15962 C 739.0487,441.3484 738.45045,441 737.83485,441 h -8.23445 c -0.6597,0 -1.2359,0.38677 -1.5441,0.91957 l -4.1171,7.14537 c -0.3298,0.57146 -0.3076,1.25656 -5e-4,1.78996 l 4.1173,7.19235 C 728.38595,458.6187 728.9843,459 729.5999,459 h 8.2343 c 0.6601,0 1.2361,-0.4159 1.5443,-0.9487 l 4.1171,-7.1599 c 0.33,-0.5716 0.3076,-1.2785 3e-4,-1.81175"
+               id="path615"
+               inkscape:connector-curvature="0"
+               style="fill:#4285f4" />
+          </g>
+          <g
+             id="Graphic_2452">
+            <title
+               id="title618">Fill-4</title>
+            <path
+               d="m 742.3143,452.9457 -6.7757,-6.77565 -0.4858,1.05165 -1.0566,-1.0565 -0.4891,1.0468 -1.04415,-1.0443 -0.25685,1.26595 -0.9294,0.15981 -0.1929,0.82659 -1.2025,0.28722 1.0775,1.0775 -1.0659,0.47473 1.0659,1.0659 -1.0728,0.45815 7.21625,7.21645 h 0.73205 c 0.6599,0 1.2361,-0.4159 1.54425,-0.9487 z"
+               id="path620"
+               inkscape:connector-curvature="0"
+               style="fill:#000000;fill-opacity:0.07000002" />
+          </g>
+          <g
+             id="Graphic_2451">
+            <title
+               id="title623">Fill-7</title>
+            <path
+               d="m 734.63,448.91926 -1.7856,1.4e-4 c -0.1049,3.3e-4 -0.1899,0.0852 -0.1902,0.19004 l 2e-4,1.78526 c 4.4e-4,0.1049 0.0851,0.18973 0.19,0.19036 h 1.7854 c 0.1049,-4.6e-4 0.1897,-0.0855 0.1902,-0.19036 v -1.78526 c -3e-4,-0.10487 -0.0851,-0.18984 -0.19,-0.19018"
+               id="path625"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff" />
+          </g>
+          <g
+             id="Graphic_2450">
+            <title
+               id="title628">Fill-9</title>
+            <path
+               d="m 735.9467,452.21175 h -4.4193 v -4.4194 l 4.4196,-1.5e-4 z m 1.5099,-3.43645 c 0.0941,-3e-4 0.1703,-0.0765 0.1706,-0.1706 v -0.278 c -3e-4,-0.0941 -0.0765,-0.1701 -0.1706,-0.17043 h -0.8685 v -0.81187 c -6e-4,-0.1047 -0.0853,-0.18956 -0.19,-0.19003 h -0.8152 l 2e-4,-0.87182 c -5e-4,-0.0941 -0.0767,-0.16999 -0.1706,-0.17045 l -0.2782,3e-4 c -0.0939,3e-4 -0.1701,0.0762 -0.1706,0.17015 l 3e-4,0.87165 h -0.9172 v -0.8718 c -5e-4,-0.0939 -0.0765,-0.17 -0.17044,-0.17046 l -0.27826,3.1e-4 c -0.0941,3.1e-4 -0.1702,0.0764 -0.17065,0.1703 l 3.5e-4,0.87165 -0.91725,1.7e-4 v -0.87197 c -4.5e-4,-0.0939 -0.0765,-0.17 -0.17045,-0.17046 l -0.2783,3.1e-4 c -0.0939,3.1e-4 -0.17,0.0764 -0.17045,0.1703 l 1.5e-4,0.87182 h -0.815 c -0.1049,3.3e-4 -0.1897,0.085 -0.1902,0.18986 v 0.81187 h -0.8685 c -0.0939,5e-4 -0.17,0.0765 -0.1705,0.17046 l 3e-4,0.27844 c 3.6e-4,0.0939 0.0764,0.17 0.1703,0.1703 h 0.8684 l 2e-4,0.9174 -0.8687,-3.3e-4 c -0.0939,4.7e-4 -0.17,0.0765 -0.1703,0.17043 l 1e-4,0.27816 c 2e-4,0.0941 0.0763,0.17014 0.1703,0.17044 h 0.8686 v 0.9174 l -0.8687,-1.7e-4 c -0.0939,4.7e-4 -0.17,0.0765 -0.1703,0.17047 l 1e-4,0.27797 c 2e-4,0.0941 0.0763,0.17029 0.1703,0.17063 h 0.8686 v 0.81217 c 4.5e-4,0.10487 0.0853,0.18953 0.19,0.19003 h 0.815 v 0.8715 c 3e-4,0.0941 0.0764,0.1703 0.17046,0.1706 h 0.27794 c 0.0941,-3e-4 0.1702,-0.0767 0.1703,-0.1706 l 2e-4,-0.8715 h 0.91705 l 1.5e-4,0.8715 c 2e-4,0.0941 0.0764,0.1703 0.1706,0.1706 h 0.278 c 0.0941,-3e-4 0.1701,-0.0767 0.1703,-0.1706 l 1.5e-4,-0.8715 h 0.91705 l 2e-4,0.8715 c 3e-4,0.0941 0.0764,0.1703 0.1706,0.1706 h 0.2778 c 0.0941,-3e-4 0.17046,-0.0765 0.1706,-0.1706 l 2e-4,-0.8715 h 0.8148 c 0.1047,-5e-4 0.1896,-0.0852 0.19,-0.19003 l 2e-4,-0.81217 0.8685,-2e-4 c 0.0941,-1.4e-4 0.1703,-0.0762 0.1706,-0.1703 v -0.27796 c -10e-5,-0.0941 -0.0765,-0.17029 -0.1706,-0.17044 h -0.8685 v -0.9174 l 0.8685,-1.4e-4 c 0.0941,-1.6e-4 0.1703,-0.0762 0.1706,-0.1703 v -0.27782 c -3e-4,-0.0941 -0.0765,-0.17044 -0.1706,-0.17061 h -0.8685 v -0.91723 z"
+               id="path630"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="Graphic_2481">
+      <text
+         transform="translate(437.3,310.2)"
+         id="text640"
+         style="fill:#757575">
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="9"
+           id="tspan636"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">Terraform</tspan>
+        <tspan
+           font-size="10"
+           font-weight="400"
+           x="0"
+           y="21"
+           id="tspan638"
+           style="font-weight:400;font-size:10px;font-family:Roboto;fill:#757575">apply</tspan>
+      </text>
+    </g>
+    <g
+       id="Graphic_2527">
+      <path
+         d="m 193.42522,300.72557 c 0,-1.6007 -1.26209,-2.86277 -2.86279,-2.86277 -1.60069,0 -2.86278,1.26207 -2.86278,2.86277 0,1.0466 0.58487,1.97008 1.416,2.4626 v 0.43096 c -0.0308,0.73877 -0.33861,1.38522 -0.89269,1.97009 -0.58487,0.58488 -1.23131,0.86191 -1.97009,0.89268 -1.20052,0.0308 -2.124,0.2155 -2.86278,0.64645 v -6.80295 c 0.83113,-0.49253 1.416,-1.38523 1.416,-2.4626 0,-1.6007 -1.26209,-2.8628 -2.86279,-2.8628 -1.53913,0 -2.80122,1.2621 -2.80122,2.8628 0,1.0466 0.58487,1.97007 1.41601,2.4626 v 9.3887 c -0.83114,0.4925 -1.41601,1.416 -1.41601,2.4626 0,1.5699 1.26209,2.832 2.86279,2.832 1.60069,0 2.86278,-1.2621 2.86278,-2.8628 0,-0.76955 -0.27705,-1.416 -0.76956,-1.9393 0.12313,-0.0923 0.67721,-0.58486 0.83113,-0.6772 0.36938,-0.15392 0.80034,-0.24627 1.35443,-0.24627 1.50835,-0.0616 2.80122,-0.64643 3.94018,-1.78539 1.13895,-1.13894 1.72382,-2.832 1.78539,-4.30957 h -0.0308 c 0.86191,-0.5233 1.44678,-1.416 1.44678,-2.4626 z m -11.42035,12.25148 c -0.46174,0 -0.83113,-0.3694 -0.83113,-0.83115 0,-0.43094 0.36939,-0.8311 0.83113,-0.8311 0.46173,0 0.83113,0.36938 0.83113,0.8311 0,0.46175 -0.40018,0.83115 -0.83113,0.83115 z m 0,-14.28315 c -0.43096,0 -0.83113,-0.36938 -0.83113,-0.8311 0,-0.46176 0.36939,-0.83115 0.83113,-0.83115 0.46173,0 0.83113,0.36939 0.83113,0.83115 0,0.46172 -0.40018,0.8311 -0.83113,0.8311 z m 8.55756,2.8628 c -0.46173,0 -0.83113,-0.3694 -0.83113,-0.83113 0,-0.43097 0.3694,-0.83113 0.83113,-0.83113 0.43097,0 0.83114,0.36939 0.83114,0.83113 0,0.46173 -0.3694,0.83113 -0.83114,0.83113 z"
+         id="path643"
+         inkscape:connector-curvature="0"
+         style="fill:#616162" />
+    </g>
+    <g
+       id="Graphic_2551">
+      <path
+         d="m 272,457.5 h 9.99544 c 0.27614,0 0.5,-0.22386 0.5,-0.5 V 401.63095 381 c 0,-0.27614 -0.22386,-0.5 -0.5,-0.5 H 272 c -0.27614,0 -0.5,0.22386 -0.5,0.5 0,0.27614 0.22386,0.5 0.5,0.5 h 9.99544 l -0.5,-0.5 V 401.63095 457 l 0.5,-0.5 H 272 c -0.27614,0 -0.5,0.22386 -0.5,0.5 0,0.27614 0.22386,0.5 0.5,0.5 z"
+         id="path646"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2552">
+      <path
+         d="m 282.0978,419.2 79.90257,-0.0572 c 0.27613,-2e-4 0.49983,-0.2242 0.49963,-0.50035 -2e-4,-0.27615 -0.2242,-0.49985 -0.50035,-0.49965 L 282.0971,418.2 c -0.27614,2e-4 -0.49984,0.2242 -0.49964,0.50036 2e-4,0.27614 0.22421,0.49984 0.50034,0.49964 z m 87.90185,-1.0629 -8,0.006 7.2e-4,1 8,-0.006 z m -4.3558,-3.14335 4.00285,3.99715 -5e-4,-0.7071 -3.99713,4.00284 0.70763,0.70661 3.9971,-4.00285 0.3533,-0.3538 -0.3538,-0.3533 -4.00285,-3.99716 z"
+         id="path649"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2553">
+      <path
+         d="M 282.13623,229 H 362 c 0.27615,0 0.5,-0.22386 0.5,-0.5 0,-0.27614 -0.22385,-0.5 -0.5,-0.5 h -79.86377 c -0.27613,0 -0.5,0.22386 -0.5,0.5 0,0.27614 0.22387,0.5 0.5,0.5 z M 370,228 h -8 v 1 h 8 z m -4.35354,-3.14645 4,4 v -0.7071 l -4,4 0.7071,0.7071 4,-4 0.35354,-0.35355 -0.35354,-0.35355 -4,-4 z"
+         id="path652"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2554">
+      <path
+         d="m 272,305.5 h 8.74933 0.93457 c 0.27616,0 0.5,-0.22386 0.5,-0.5 V 167.638 153 c 0,-0.27614 -0.22384,-0.5 -0.5,-0.5 H 271.9 c -0.27614,0 -0.5,0.22386 -0.5,0.5 0,0.27614 0.22386,0.5 0.5,0.5 h 9.7839 l -0.5,-0.5 V 167.638 305 l 0.5,-0.5 H 280.74933 272 c -0.27614,0 -0.5,0.22386 -0.5,0.5 0,0.27614 0.22386,0.5 0.5,0.5 z"
+         id="path655"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2555">
+      <path
+         d="m 521.9,426 h -5 -25.2 l 0.5,0.5 V 407.4136 211.11446 191.5 l -0.5,0.5 h 25.2 5 c 0.27615,0 0.5,-0.22386 0.5,-0.5 0,-0.27614 -0.22385,-0.5 -0.5,-0.5 h -5 -25.2 c -0.2761,0 -0.5,0.22386 -0.5,0.5 V 211.11446 407.4136 426.5 c 0,0.27614 0.2239,0.5 0.5,0.5 h 25.2 5 c 0.27615,0 0.5,-0.22386 0.5,-0.5 0,-0.27614 -0.22385,-0.5 -0.5,-0.5 z m 8,-235 h -8 v 1 h 8 z m -4.35355,-3.14645 4,4 v -0.7071 l -4,4 0.70711,0.7071 4,-4 0.35354,-0.35355 -0.35354,-0.35355 -4,-4 z M 529.9,426 h -8 v 1 h 8 z m -4.35355,-3.14645 4,4 v -0.7071 l -4,4 0.70711,0.7071 4,-4 0.35354,-0.35355 -0.35354,-0.35355 -4,-4 z"
+         id="path658"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2556">
+      <path
+         d="m 471.7,419.1 h 19.5802 c 0.2761,0 0.5,-0.22385 0.5,-0.5 0,-0.27614 -0.2239,-0.5 -0.5,-0.5 H 471.7 c -0.27613,0 -0.5,0.22386 -0.5,0.5 0,0.27615 0.22387,0.5 0.5,0.5 z"
+         id="path661"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2557">
+      <path
+         d="M 58.8,256.6 V 246.6 175.97592 153 l -0.5,0.5 h 86.7 5 c 0.27614,0 0.5,-0.22386 0.5,-0.5 0,-0.27614 -0.22386,-0.5 -0.5,-0.5 h -5 -86.7 c -0.27614,0 -0.5,0.22386 -0.5,0.5 v 22.97592 70.62408 10 c 0,0.27614 0.22386,0.5 0.5,0.5 0.276144,0 0.5,-0.22386 0.5,-0.5 z M 158,152.5 h -8 v 1 h 8 z m -4.35355,-3.14645 4,4 v -0.7071 l -4,4 0.70711,0.7071 4,-4 0.35354,-0.35355 -0.35354,-0.35355 -4,-4 z"
+         id="path664"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Graphic_2558">
+      <path
+         d="m 57.8,351.9 v 10 71.82033 V 457 c 0,0.27614 0.22386,0.5 0.5,0.5 h 86.8 5 c 0.27614,0 0.5,-0.22386 0.5,-0.5 0,-0.27614 -0.22386,-0.5 -0.5,-0.5 h -5 -86.8 l 0.5,0.5 V 433.72033 361.9 v -10 c 0,-0.27614 -0.223856,-0.5 -0.5,-0.5 -0.27614,0 -0.5,0.22386 -0.5,0.5 z m 100.3,104.6 h -8 v 1 h 8 z m -4.35355,-3.14645 4,4 v -0.7071 l -4,4 0.7071,0.7071 4,-4 0.35355,-0.35355 -0.35355,-0.35355 -4,-4 z"
+         id="path667"
+         inkscape:connector-curvature="0"
+         style="fill:#616161" />
+    </g>
+    <g
+       id="Group_2536">
+      <g
+         id="Graphic_2538">
+        <rect
+           x="160"
+           y="353"
+           width="112"
+           height="56"
+           id="rect670"
+           style="fill:#ffffff" />
+        <rect
+           x="160"
+           y="353"
+           width="112"
+           height="56"
+           clip-path="url(#inner_stroke_clip_path_10)"
+           id="rect672"
+           style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(201,374)"
+           id="text676"
+           style="fill:#212121">
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="0"
+             y="11"
+             id="tspan674"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">dev</tspan>
+        </text>
+      </g>
+      <g
+         id="Graphic_2537">
+        <path
+           d="m 193.42522,376.72557 c 0,-1.6007 -1.26209,-2.86277 -2.86279,-2.86277 -1.60069,0 -2.86278,1.26207 -2.86278,2.86277 0,1.0466 0.58487,1.97008 1.416,2.4626 v 0.43096 c -0.0308,0.73877 -0.33861,1.38522 -0.89269,1.97007 -0.58487,0.5849 -1.23131,0.86193 -1.97009,0.8927 -1.20052,0.0308 -2.124,0.2155 -2.86278,0.64645 v -6.80295 c 0.83113,-0.49253 1.416,-1.38523 1.416,-2.4626 0,-1.6007 -1.26209,-2.8628 -2.86279,-2.8628 -1.53913,0 -2.80122,1.2621 -2.80122,2.8628 0,1.0466 0.58487,1.97007 1.41601,2.4626 v 9.3887 c -0.83114,0.4925 -1.41601,1.416 -1.41601,2.4626 0,1.5699 1.26209,2.832 2.86279,2.832 1.60069,0 2.86278,-1.2621 2.86278,-2.8628 0,-0.76955 -0.27705,-1.416 -0.76956,-1.9393 0.12313,-0.0923 0.67721,-0.58486 0.83113,-0.6772 0.36938,-0.1539 0.80034,-0.24627 1.35443,-0.24627 1.50835,-0.0616 2.80122,-0.64643 3.94018,-1.78539 1.13895,-1.13894 1.72382,-2.832 1.78539,-4.30957 h -0.0308 c 0.86191,-0.5233 1.44678,-1.416 1.44678,-2.4626 z m -11.42035,12.25148 c -0.46174,0 -0.83113,-0.3694 -0.83113,-0.83115 0,-0.43094 0.36939,-0.8311 0.83113,-0.8311 0.46173,0 0.83113,0.36938 0.83113,0.8311 0,0.46175 -0.40018,0.83115 -0.83113,0.83115 z m 0,-14.28315 c -0.43096,0 -0.83113,-0.3694 -0.83113,-0.8311 0,-0.46176 0.36939,-0.83115 0.83113,-0.83115 0.46173,0 0.83113,0.36939 0.83113,0.83115 0,0.4617 -0.40018,0.8311 -0.83113,0.8311 z m 8.55756,2.8628 c -0.46173,0 -0.83113,-0.3694 -0.83113,-0.83113 0,-0.43097 0.3694,-0.83113 0.83113,-0.83113 0.43097,0 0.83114,0.36939 0.83114,0.83113 0,0.46173 -0.3694,0.83113 -0.83114,0.83113 z"
+           id="path679"
+           inkscape:connector-curvature="0"
+           style="fill:#616162" />
+      </g>
+    </g>
+    <g
+       id="Group_2546">
+      <g
+         id="Graphic_2548">
+        <rect
+           x="160"
+           y="429"
+           width="112"
+           height="56"
+           id="rect683"
+           style="fill:#ffffff" />
+        <rect
+           x="160"
+           y="429"
+           width="112"
+           height="56"
+           clip-path="url(#inner_stroke_clip_path_11)"
+           id="rect685"
+           style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           transform="translate(201,450)"
+           id="text689"
+           style="fill:#212121">
+          <tspan
+             font-size="12"
+             font-weight="400"
+             x="0"
+             y="11"
+             id="tspan687"
+             style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">prod</tspan>
+        </text>
+      </g>
+      <g
+         id="Graphic_2547">
+        <path
+           d="m 193.42522,452.72557 c 0,-1.6007 -1.26209,-2.86277 -2.86279,-2.86277 -1.60069,0 -2.86278,1.26207 -2.86278,2.86277 0,1.04663 0.58487,1.97008 1.416,2.46263 v 0.43093 c -0.0308,0.73877 -0.33861,1.38522 -0.89269,1.97007 -0.58487,0.5849 -1.23131,0.86193 -1.97009,0.8927 -1.20052,0.0308 -2.124,0.2155 -2.86278,0.64645 v -6.80295 c 0.83113,-0.49253 1.416,-1.3852 1.416,-2.4626 0,-1.6007 -1.26209,-2.8628 -2.86279,-2.8628 -1.53913,0 -2.80122,1.2621 -2.80122,2.8628 0,1.0466 0.58487,1.97007 1.41601,2.4626 v 9.3887 c -0.83114,0.4925 -1.41601,1.416 -1.41601,2.4626 0,1.5699 1.26209,2.832 2.86279,2.832 1.60069,0 2.86278,-1.2621 2.86278,-2.8628 0,-0.76955 -0.27705,-1.416 -0.76956,-1.9393 0.12313,-0.0923 0.67721,-0.58486 0.83113,-0.6772 0.36938,-0.1539 0.80034,-0.24627 1.35443,-0.24627 1.50835,-0.0616 2.80122,-0.64643 3.94018,-1.78539 1.13895,-1.13894 1.72382,-2.832 1.78539,-4.30954 h -0.0308 c 0.86191,-0.52333 1.44678,-1.416 1.44678,-2.46263 z m -11.42035,12.25148 c -0.46174,0 -0.83113,-0.3694 -0.83113,-0.83115 0,-0.43094 0.36939,-0.8311 0.83113,-0.8311 0.46173,0 0.83113,0.3694 0.83113,0.8311 0,0.46175 -0.40018,0.83115 -0.83113,0.83115 z m 0,-14.28315 c -0.43096,0 -0.83113,-0.3694 -0.83113,-0.8311 0,-0.46176 0.36939,-0.83115 0.83113,-0.83115 0.46173,0 0.83113,0.36939 0.83113,0.83115 0,0.4617 -0.40018,0.8311 -0.83113,0.8311 z m 8.55756,2.8628 c -0.46173,0 -0.83113,-0.3694 -0.83113,-0.83113 0,-0.43097 0.3694,-0.83113 0.83113,-0.83113 0.43097,0 0.83114,0.36936 0.83114,0.83113 0,0.46173 -0.3694,0.83113 -0.83114,0.83113 z"
+           id="path692"
+           inkscape:connector-curvature="0"
+           style="fill:#616162" />
+      </g>
+    </g>
+    <g
+       id="Graphic_2287">
+      <rect
+         style="fill:#ffffff"
+         id="rect696"
+         height="56"
+         width="112"
+         y="125"
+         x="159.89999" />
+      <rect
+         style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+         id="rect698"
+         clip-path="url(#inner_stroke_clip_path_12)"
+         height="56"
+         width="112"
+         y="125"
+         x="159.89999" />
+      <text
+         style="fill:#212121"
+         id="text702"
+         transform="translate(200.9,146)">
+        <tspan
+           style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121"
+           id="tspan700"
+           y="11"
+           x="0"
+           font-weight="400"
+           font-size="12">branch x</tspan>
+      </text>
+    </g>
+    <g
+       id="Graphic_2524">
+      <path
+         style="fill:#616162"
+         inkscape:connector-curvature="0"
+         id="path705"
+         d="m 193.32522,148.72557 c 0,-1.6007 -1.26209,-2.86279 -2.86278,-2.86279 -1.6007,0 -2.86279,1.26209 -2.86279,2.86279 0,1.0466 0.58487,1.97008 1.416,2.4626 v 0.43096 c -0.0308,0.73878 -0.3386,1.38522 -0.89269,1.97009 -0.58487,0.58487 -1.23131,0.86191 -1.97009,0.89269 -1.20052,0.0308 -2.124,0.21549 -2.86278,0.64644 v -6.80295 c 0.83113,-0.49253 1.416,-1.38523 1.416,-2.46262 0,-1.60069 -1.26209,-2.86278 -2.86279,-2.86278 -1.53913,0 -2.80121,1.26209 -2.80121,2.86278 0,1.04662 0.58487,1.97009 1.416,2.46262 v 9.38869 c -0.83113,0.49252 -1.416,1.416 -1.416,2.46261 0,1.56991 1.26208,2.832 2.86278,2.832 1.6007,0 2.86278,-1.26209 2.86278,-2.86278 0,-0.76957 -0.27705,-1.416 -0.76956,-1.93931 0.12313,-0.0924 0.67721,-0.58487 0.83113,-0.67721 0.36938,-0.15392 0.80035,-0.24627 1.35443,-0.24627 1.50835,-0.0616 2.80122,-0.64643 3.94018,-1.78539 1.13896,-1.13896 1.72382,-2.832 1.78539,-4.30957 h -0.0308 c 0.86191,-0.5233 1.44678,-1.416 1.44678,-2.4626 z m -11.42035,12.25148 c -0.46174,0 -0.83113,-0.3694 -0.83113,-0.83113 0,-0.43096 0.36939,-0.83113 0.83113,-0.83113 0.46173,0 0.83113,0.36939 0.83113,0.83113 0,0.46173 -0.40017,0.83113 -0.83113,0.83113 z m 0,-14.28314 c -0.43096,0 -0.83113,-0.36939 -0.83113,-0.83113 0,-0.46174 0.36939,-0.83113 0.83113,-0.83113 0.46173,0 0.83113,0.36939 0.83113,0.83113 0,0.46174 -0.40017,0.83113 -0.83113,0.83113 z m 8.55757,2.86279 c -0.46174,0 -0.83114,-0.3694 -0.83114,-0.83113 0,-0.43096 0.3694,-0.83113 0.83114,-0.83113 0.43096,0 0.83113,0.36939 0.83113,0.83113 0,0.46173 -0.36939,0.83113 -0.83113,0.83113 z" />
+    </g>
+    <rect
+       style="fill:#ffffff"
+       id="rect709"
+       height="56"
+       width="112"
+       y="277"
+       x="160" />
+    <rect
+       style="stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       id="rect711"
+       clip-path="url(#inner_stroke_clip_path_13)"
+       height="56"
+       width="112"
+       y="277"
+       x="160" />
+    <text
+       y="298"
+       x="203"
+       style="fill:#212121"
+       id="text715">
+      <tspan
+         style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121"
+         id="tspan713"
+         y="309"
+         x="203"
+         font-weight="400"
+         font-size="12">branch z</tspan>
+    </text>
+    <g
+       transform="translate(1.816345,153.99565)"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-dasharray:none;stroke-opacity:1"
+       id="Graphic_2524-6">
+      <path
+         style="fill:#616162"
+         inkscape:connector-curvature="0"
+         id="path705-7"
+         d="m 193.32522,148.72557 c 0,-1.6007 -1.26209,-2.86279 -2.86278,-2.86279 -1.6007,0 -2.86279,1.26209 -2.86279,2.86279 0,1.0466 0.58487,1.97008 1.416,2.4626 v 0.43096 c -0.0308,0.73878 -0.3386,1.38522 -0.89269,1.97009 -0.58487,0.58487 -1.23131,0.86191 -1.97009,0.89269 -1.20052,0.0308 -2.124,0.21549 -2.86278,0.64644 v -6.80295 c 0.83113,-0.49253 1.416,-1.38523 1.416,-2.46262 0,-1.60069 -1.26209,-2.86278 -2.86279,-2.86278 -1.53913,0 -2.80121,1.26209 -2.80121,2.86278 0,1.04662 0.58487,1.97009 1.416,2.46262 v 9.38869 c -0.83113,0.49252 -1.416,1.416 -1.416,2.46261 0,1.56991 1.26208,2.832 2.86278,2.832 1.6007,0 2.86278,-1.26209 2.86278,-2.86278 0,-0.76957 -0.27705,-1.416 -0.76956,-1.93931 0.12313,-0.0924 0.67721,-0.58487 0.83113,-0.67721 0.36938,-0.15392 0.80035,-0.24627 1.35443,-0.24627 1.50835,-0.0616 2.80122,-0.64643 3.94018,-1.78539 1.13896,-1.13896 1.72382,-2.832 1.78539,-4.30957 h -0.0308 c 0.86191,-0.5233 1.44678,-1.416 1.44678,-2.4626 z m -11.42035,12.25148 c -0.46174,0 -0.83113,-0.3694 -0.83113,-0.83113 0,-0.43096 0.36939,-0.83113 0.83113,-0.83113 0.46173,0 0.83113,0.36939 0.83113,0.83113 0,0.46173 -0.40017,0.83113 -0.83113,0.83113 z m 0,-14.28314 c -0.43096,0 -0.83113,-0.36939 -0.83113,-0.83113 0,-0.46174 0.36939,-0.83113 0.83113,-0.83113 0.46173,0 0.83113,0.36939 0.83113,0.83113 0,0.46174 -0.40017,0.83113 -0.83113,0.83113 z m 8.55757,2.86279 c -0.46174,0 -0.83114,-0.3694 -0.83114,-0.83113 0,-0.43096 0.3694,-0.83113 0.83114,-0.83113 0.43096,0 0.83113,0.36939 0.83113,0.83113 0,0.46173 -0.36939,0.83113 -0.83113,0.83113 z" />
+    </g>
+    <rect
+       x="161"
+       y="51"
+       width="112"
+       height="56"
+       id="rect670-3"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       x="160"
+       y="353"
+       width="112"
+       height="56"
+       clip-path="url(#inner_stroke_clip_path_10-3)"
+       id="rect672-5"
+       style="fill:none;fill-opacity:1;stroke:#dfdfdf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       transform="translate(1,-302)" />
+    <text
+       id="text676-6"
+       style="fill:#212121;fill-opacity:1;stroke:none;stroke-dasharray:none;stroke-opacity:1"
+       x="192"
+       y="62">
+      <tspan
+         font-size="12"
+         font-weight="400"
+         x="192"
+         y="73"
+         id="tspan674-2"
+         style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">GitHub</tspan>
+    </text>
+    <text
+       id="text676-6-2"
+       style="fill:#212121;fill-opacity:1;stroke:none;stroke-dasharray:none;stroke-opacity:1"
+       x="192.38477"
+       y="80.441406">
+      <tspan
+         font-size="12"
+         font-weight="400"
+         x="192.38477"
+         y="91.441406"
+         id="tspan674-2-7"
+         style="font-weight:400;font-size:12px;font-family:Roboto;fill:#212121">repository</tspan>
+    </text>
+  </g>
+</svg>
