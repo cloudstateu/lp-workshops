@@ -94,7 +94,7 @@ Konfigurujemy Terraform, aby stan środowisk `dev` i `prod` przechowywał w dedy
 
 ## Krok 6: Usuń repozytorium
 
-1. Przejdź do strony GitHub z zainstalowanymi aplikacjami - https://github.com/settings/installations. Odinstaluj Google Cloud Build ("Configure" > "Danger zone" > "Uninstall Google Cloud Build").
+1. Przejdź do strony GitHub z zainstalowanymi aplikacjami - https://github.com/settings/installations. Odinstaluj Google Cloud Build ("Configure" > "Danger zone" > "Uninstall Google Cloud Build"). Jeśli Google Cloud Build nadal pojawia się na liście aplikacji, odśwież stronę.
 1. Usuń repozytorium z kodem (jeśli chcesz).
 
 ---
