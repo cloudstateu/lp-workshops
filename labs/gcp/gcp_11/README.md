@@ -1,4 +1,6 @@
-## Instalacja Anhtos
+# Anthos
+
+## Instalacja Anthos
 
 1. Wybierz Anthos w menu
 2. Na glownej stronie Anthos, w sekcji "Get started with Anthos" wybierz "Launch Anthos sample deployment"
@@ -12,9 +14,3 @@
   - Zaznacz "I accept the GCP Marketplace Terms of Service."
 
   Rozpocznij wdrożenie klikając "DEPLOY". Zostaniesz przekierowany do strony Deployment Managera. Deployment będzie trwał około 10 minut. Zwróć uwagę jakie zasoby są tworzone.
-
----
-
-TODO
-
-- [ ] Włącz API Anthos, Compute Engine API, Cloud Deployment Manager V2 API, Cloud Runtime Configuration API
