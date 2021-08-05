@@ -1,4 +1,4 @@
-<img src="../../../img/logo.png" alt="Chmurowisko logo" width="200"  align="right">
+<img src="../../../../img/logo.png" alt="Chmurowisko logo" width="200"  align="right">
 <br><br>
 <br><br>
 <br><br>
