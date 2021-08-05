@@ -114,6 +114,8 @@ Utworzony klaster GKE nalezy dołączyć do puli zasobów zarządzanych przez An
 
 Google dostarcza gotowy skrypt do instalacji ASM na GKE ([więcej informacji w dokumentacji](https://cloud.google.com/service-mesh/docs/scripted-install/reference#understanding_the_script)). Nalezy go zmodyfikować i włączyć przesyłanie informacji o trackingu (domyslnie wyłaczone).
 
+1. Wykonaj ponizsze komendy:
+
     ```bash
     curl https://storage.googleapis.com/csm-artifacts/asm/install_asm_1.9 > install_asm
     ```

@@ -13,21 +13,21 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
 
 1. Utwórz nowy namespace
 
-  ```bash
-  kubectl create ns boutique
-  ```
+    ```bash
+    kubectl create ns boutique
+    ```
 
 1. Enable sidecar injection
    
-  ```bash
-  kubectl label namespace default istio-injection- istio.io/rev=asm-196-2 --overwrite
-  ```
+    ```bash
+    kubectl label namespace default istio-injection- istio.io/rev=asm-196-2 --overwrite
+    ```
 
 1. Deploy nowej apliakcji
    
-  ```bash
-  kubectl apply -n boutique -f https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/master/release/kubernetes-manifests.yaml
-  ```
+    ```bash
+    kubectl apply -n boutique -f https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/master/release/kubernetes-manifests.yaml
+    ```
 
 1. Upewnij się, ze każdy pod ma Sidecar. Gdyby tak nie było zrestartuj deploymenty
   
@@ -35,103 +35,103 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
   
 1. Utwórz nowy plik z konfiguracją Istio  
 
-  ```bash
-  cat > boutique-istio.yaml <<EOF
-  apiVersion: networking.istio.io/v1alpha3
-  kind: Gateway
-  metadata:
-    name: frontend-gateway
-  spec:
-    selector:
-      istio: ingressgateway # use Istio default gateway implementation
-    servers:
-    - port:
-        number: 80
-        name: http
-        protocol: HTTP
+    ```bash
+    cat > boutique-istio.yaml <<EOF
+    apiVersion: networking.istio.io/v1alpha3
+    kind: Gateway
+    metadata:
+      name: frontend-gateway
+    spec:
+      selector:
+        istio: ingressgateway # use Istio default gateway implementation
+      servers:
+      - port:
+          number: 80
+          name: http
+          protocol: HTTP
+        hosts:
+        - "*"
+    ---
+    apiVersion: networking.istio.io/v1alpha3
+    kind: VirtualService
+    metadata:
+      name: frontend-ingress
+    spec:
       hosts:
       - "*"
-  ---
-  apiVersion: networking.istio.io/v1alpha3
-  kind: VirtualService
-  metadata:
-    name: frontend-ingress
-  spec:
-    hosts:
-    - "*"
-    gateways:
-    - frontend-gateway
-    http:
-    - route:
-      - destination:
-          host: frontend
-          port:
-            number: 80
-  ---
-  apiVersion: networking.istio.io/v1alpha3
-  kind: ServiceEntry
-  metadata:
-    name: allow-egress-googleapis
-  spec:
-    hosts:
-    - "accounts.google.com" # Used to get token
-    - "*.googleapis.com"
-    ports:
-    - number: 80
-      protocol: HTTP
-      name: http
-    - number: 443
-      protocol: HTTPS
-      name: https
-  ---
-  apiVersion: networking.istio.io/v1alpha3
-  kind: ServiceEntry
-  metadata:
-    name: allow-egress-google-metadata
-  spec:
-    hosts:
-    - metadata.google.internal
-    addresses:
-    - 169.254.169.254 # GCE metadata server
-    ports:
-    - number: 80
-      name: http
-      protocol: HTTP
-    - number: 443
-      name: https
-      protocol: HTTPS
-  ---
-  apiVersion: networking.istio.io/v1alpha3
-  kind: VirtualService
-  metadata:
-    name: frontend
-  spec:
-    hosts:
-    - "frontend.boutique.svc.cluster.local"
-    http:
-    - route:
-      - destination:
-          host: frontend
-          port:
-            number: 80
-  ---
-  EOF
-  ```
+      gateways:
+      - frontend-gateway
+      http:
+      - route:
+        - destination:
+            host: frontend
+            port:
+              number: 80
+    ---
+    apiVersion: networking.istio.io/v1alpha3
+    kind: ServiceEntry
+    metadata:
+      name: allow-egress-googleapis
+    spec:
+      hosts:
+      - "accounts.google.com" # Used to get token
+      - "*.googleapis.com"
+      ports:
+      - number: 80
+        protocol: HTTP
+        name: http
+      - number: 443
+        protocol: HTTPS
+        name: https
+    ---
+    apiVersion: networking.istio.io/v1alpha3
+    kind: ServiceEntry
+    metadata:
+      name: allow-egress-google-metadata
+    spec:
+      hosts:
+      - metadata.google.internal
+      addresses:
+      - 169.254.169.254 # GCE metadata server
+      ports:
+      - number: 80
+        name: http
+        protocol: HTTP
+      - number: 443
+        name: https
+        protocol: HTTPS
+    ---
+    apiVersion: networking.istio.io/v1alpha3
+    kind: VirtualService
+    metadata:
+      name: frontend
+    spec:
+      hosts:
+      - "frontend.boutique.svc.cluster.local"
+      http:
+      - route:
+        - destination:
+            host: frontend
+            port:
+              number: 80
+    ---
+    EOF
+    ```
 
-  ```bash
-  kubectl apply -n boutique -f ./boutique-istio.yaml
-  ```
+    ```bash
+    kubectl apply -n boutique -f ./boutique-istio.yaml
+    ```
 
 1. Konfiguracja deploymentu
 
-  ```bash
-  kubectl patch -n boutique deployments/productcatalogservice -p '{"spec":{"template":{"metadata":{"labels":{"version":"v1"}}}}}'
-  ```
+    ```bash
+    kubectl patch -n boutique deployments/productcatalogservice -p '{"spec":{"template":{"metadata":{"labels":{"version":"v1"}}}}}'
+    ```
   
 1. Wyświetl usługi na dashboard GKE
   
-  - Menu > Kubernetes Engine > Workloads > (filtruj po namespace `boutique`)
-  - Menu > Kubernetes Engine > Services & Ingress > (znajdź `frontend-external`) > (wyświetl w przeglądarce po Extrnal IP)
+    - Menu > Kubernetes Engine > Workloads > (filtruj po namespace `boutique`)
+    - Menu > Kubernetes Engine > Services & Ingress > (znajdź `frontend-external`) > (wyświetl w przeglądarce po Extrnal IP)
 
 ## Krok 3:  Wykorzystanie usług Cloud Operations
     
@@ -139,13 +139,13 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
     
   - Menu > Logging > Logs Explorer    
   
-1. Stwórz nowe query w celu wyszukania logów z informacjami
+  1. Stwórz nowe query w celu wyszukania logów z informacjami
 
-  - GKE Cluster Operations - informacje związane z operacjami na usłudze GKE (__API requests made to the Google GKE service for things like creating a GKE cluster.__)
-  - Kubernetes Cluster - logi związane z działaniem klastra (__API requests made to the master__)
-  - Kubernetes Node - logi związane z operacjami wykonywanymi z Node (__worker node logs__)
-  - Kubernetes Pod - logi z Podów (probe results and container restarts)
-  - Kubernetes Container - logi z kontenerów (__log entries scraped from the running containers on the cluster__)
+      - GKE Cluster Operations - informacje związane z operacjami na usłudze GKE (__API requests made to the Google GKE service for things like creating a GKE cluster.__)
+      - Kubernetes Cluster - logi związane z działaniem klastra (__API requests made to the master__)
+      - Kubernetes Node - logi związane z operacjami wykonywanymi z Node (__worker node logs__)
+      - Kubernetes Pod - logi z Podów (probe results and container restarts)
+      - Kubernetes Container - logi z kontenerów (__log entries scraped from the running containers on the cluster__)
 
 ### Cloud Monitoring
 
@@ -160,32 +160,32 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
 
 1. Pobierz repozytorium z przykładową aplikacją
 
-  ```bash
-  git clone https://github.com/GoogleCloudPlatform/istio-samples.git \
-  ~/istio-samples
-  ```
-  
-  ```bash
-  cd istio-samples/istio-canary-gke/canary
-  ```
-  
-  ```bash
-  kubectl apply -n boutique -f destinationrule.yaml -f productcatalog-v2.yaml -f vs-split-traffic.yaml
-  ```
+    ```bash
+    git clone https://github.com/GoogleCloudPlatform/istio-samples.git \
+    ~/istio-samples
+    ```
+
+    ```bash
+    cd istio-samples/istio-canary-gke/canary
+    ```
+
+    ```bash
+    kubectl apply -n boutique -f destinationrule.yaml -f productcatalog-v2.yaml -f vs-split-traffic.yaml
+    ```
 
 ## Krok 5: Ustaw SLO
 
   - Navigation > Anthos > Service Mesh > Dashboard > `productscatalogservice` > Health > "+ Create SLO"
 
-  ```bash
-  - Metric: Latency
-  - Request-based
-  - Threshold: 1000 ms
-  - Period length: Calendar day
-  - Performance goal: 99.5%
-  ```
+    ```bash
+    - Metric: Latency
+    - Request-based
+    - Threshold: 1000 ms
+    - Period length: Calendar day
+    - Performance goal: 99.5%
+    ```
 
-  Czy SLO jest spełnione?
+    Czy SLO jest spełnione?
 
 ## Krok 6: Analiza wykresów
 
@@ -195,9 +195,9 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
 
 1. Wykonaj Rollback do poprzedniej wersji aplikacji
   
-  ```bash
-  kubectl delete -n boutique -f destinationrule.yaml -f productcatalog-v2.yaml -f vs-split-traffic.yaml
-  ```
+    ```bash
+    kubectl delete -n boutique -f destinationrule.yaml -f productcatalog-v2.yaml -f vs-split-traffic.yaml
+    ```
 
 1. Odczekaj około minuty i sprawdź czy czasy odpowiedzi zostały zmniejszone oraz czy SLO się podnioslo
   
