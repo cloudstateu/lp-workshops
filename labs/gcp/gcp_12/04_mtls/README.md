@@ -11,13 +11,13 @@ W tym ćwiczeniu wdrożysz kilka usług na podstawie których przetestujesz zach
 
 1. Utwórz namespace
 
-  ```javascript
+  ```bash
   kubectl create namespace mtls-client && kubectl create namespace mtls-service && kubectl create namespace legacy-client && kubectl create namespace legacy-service
   ```
 
 1. Stwórz plik `httpbin.yaml`
   
-  ```javascript
+  ```bash
   cat > httpbin.yaml <<EOF
   apiVersion: v1
   kind: ServiceAccount
@@ -67,7 +67,7 @@ W tym ćwiczeniu wdrożysz kilka usług na podstawie których przetestujesz zach
 
 1. Stwórz plik `sleep.yaml`
 
-  ```javascript
+  ```bash
   cat > sleep.yaml <<EOF
   apiVersion: v1
   kind: ServiceAccount
@@ -121,23 +121,23 @@ W tym ćwiczeniu wdrożysz kilka usług na podstawie których przetestujesz zach
 
 1. Wdróż usługi `legacy-*`
   
-  ```javascript
+  ```bash
   kubectl apply -f httpbin.yaml -n legacy-service && kubectl apply -f sleep.yaml -n legacy-client
   ```
 
 1. Wdróż usługi `mtls-*`
   
-  ```javascript
+  ```bash
   kubectl label namespace mtls-client istio-injection- istio.io/rev=asm-196-2 --overwrite && kubectl label namespace mtls-service istio-injection- istio.io/rev=asm-196-2 --overwrite
   ```
   
-  ```javascript
+  ```bash
   kubectl apply -f sleep.yaml -n mtls-client && kubectl apply -f httpbin.yaml -n mtls-service
   ```
 
 1. Sprawdź czy Post zostały utworzone
   
-  ```javascript
+  ```bash
   $ kubectl get pods --all-namespaces
 
   legacy-client    sleep-854565cb79-mc6c9                                      1/1     Running   0          8m9s
@@ -148,7 +148,7 @@ W tym ćwiczeniu wdrożysz kilka usług na podstawie których przetestujesz zach
 
 1. Wykonaj test połączenia pomiędzy uslugami
   
-  ```javascript
+  ```bash
   for from in "mtls-client" "legacy-client"; do
     for to in "mtls-service" "legacy-service"; do
       kubectl exec $(kubectl get pod -l app=sleep -n ${from} -o jsonpath={.items..metadata.name}) -c sleep -n ${from} -- curl "http://httpbin.${to}:8000/ip" -s -o /dev/null -w "sleep.${from} to httpbin.${to}: %{http_code}\n"
@@ -161,13 +161,13 @@ Przejdź do Anthos Service Mesh Dashboard i wyświetl szczegóły usługi `httpb
 
 Zauważ, że gdy wykonasz request z namespace `mtls-*` dodawany jest nagłówek
 
-  ```javascript
+  ```bash
   kubectl exec $(kubectl get pod -l app=sleep -n mtls-client -o jsonpath={.items..metadata.name}) -c sleep -n mtls-client -- curl http://httpbin.mtls-service:8000/headers -s | grep X-Forwarded-Client-Cert
   ```
 
 Zauważ, że gdy wykonasz request z namespace `legacy-*` nagłówek nie jest dodawany
   
-  ```javascript
+  ```bash
   kubectl exec $(kubectl get pod -l app=sleep -n mtls-client -o jsonpath={.items..metadata.name}) -c sleep -n mtls-client -- curl http://httpbin.legacy-service:8000/headers -s | grep X-Forwarded-Client-Cert
   ```
 
@@ -175,7 +175,7 @@ Zauważ, że gdy wykonasz request z namespace `legacy-*` nagłówek nie jest dod
     
 1. Wykonaj poniższą komendę (dodaje sprawdzenie mTLS globalnie na klastrze)
   
-  ```javascript
+  ```yaml
   kubectl apply -n istio-system -f - <<EOF
   apiVersion: "security.istio.io/v1beta1"
   kind: "PeerAuthentication"
@@ -188,7 +188,7 @@ Zauważ, że gdy wykonasz request z namespace `legacy-*` nagłówek nie jest dod
   ```
 
 1. Wykonaj test połączenia pomiędzy usługami ponownie
-  ```javascript
+  ```bash
   for from in "mtls-client" "legacy-client"; do
     for to in "mtls-service" "legacy-service"; do
       kubectl exec $(kubectl get pod -l app=sleep -n ${from} -o jsonpath={.items..metadata.name}) -c sleep -n ${from} -- curl "http://httpbin.${to}:8000/ip" -s -o /dev/null -w "sleep.${from} to httpbin.${to}: %{http_code}\n"
@@ -198,25 +198,25 @@ Zauważ, że gdy wykonasz request z namespace `legacy-*` nagłówek nie jest dod
 
 1. Usuń PeerAuthentication na poziomie klastra
   
-  ```javascript
+  ```bash
   kubectl delete pa mesh-wide-mtls -n istio-system
   ```
 
 1. Dodaj jeden namespace chroniony mTLS i przetesuj komunikację z nim
 
-  ```javascript
+  ```bash
   kubectl create ns strict-mtls-service
   ```
   
-  ```javascript
+  ```bash
   kubectl label namespace strict-mtls-service istio-injection- istio.io/rev=asm-196-2 --overwrite
   ```
   
-  ```javascript
+  ```bash
   kubectl apply -f httpbin.yaml -n strict-mtls-service
   ```
   
-  ```javascript
+  ```bash
   kubectl apply -n strict-mtls-service -f - <<EOF
   apiVersion: "security.istio.io/v1beta1"
   kind: "PeerAuthentication"
@@ -229,7 +229,7 @@ Zauważ, że gdy wykonasz request z namespace `legacy-*` nagłówek nie jest dod
   EOF
   ```
   
-  ```javascript
+  ```bash
   for from in "mtls-client" "legacy-client"; do
     for to in "mtls-service" "legacy-service" "strict-mtls-service"; do
       kubectl exec $(kubectl get pod -l app=sleep -n ${from} -o jsonpath={.items..metadata.name}) -c sleep -n ${from} -- curl "http://httpbin.${to}:8000/ip" -s -o /dev/null -w "sleep.${from} to httpbin.${to}: %{http_code}\n"

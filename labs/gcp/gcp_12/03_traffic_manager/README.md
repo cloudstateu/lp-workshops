@@ -22,7 +22,7 @@ Przypadki uzycia Traffic Manager
 
 1. Sprawdź czy wszystkie pody działają i maja wstrzyknięty Sidecar
 
-  ```shell
+  ```bash
   $ kubectl get pods
 
   NAME                              READY   STATUS    RESTARTS   AGE
@@ -34,7 +34,7 @@ Przypadki uzycia Traffic Manager
   reviews-v3-84779c7bbc-t4549       2/2     Running   0          3h6m
   ```
   
-  ```shell
+  ```bash
   $ kubectl get svc
 
   NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
@@ -51,25 +51,25 @@ W naszym ćwiczeniu mamy już utworzony obiekt `istio-ingressgateway`, który po
 
 1. Wyświetl szczegóły `istio-ingressgateway`
 
-  ```javascript
+  ```bash
   kubectl describe svc istio-ingressgateway -n istio-system
   ```
 
 1. Znajdź adres IP gateway
 
-  ```javascript
+  ```bash
   kubectl get svc istio-ingressgateway -o=jsonpath='{.status.loadBalancer.ingress[0].ip}' -n istio-system
   ```
 
 1. Wykonaj Load Test za pomocą siege
 
-  ```javascript
+  ```bash
   siege http://<EXTERNAL-IP>/productpage -c 5 -d 5
   ```
 
 1. W drugim oknie Cloud Console ustaw zmienne środowiskowe
 
-  ```javascript
+  ```bash
   export CLUSTER_NAME=lbcluster
   export CLUSTER_ZONE=europe-west3-b
   export GCLOUD_PROJECT=$(gcloud config get-value project)
@@ -81,19 +81,19 @@ W naszym ćwiczeniu mamy już utworzony obiekt `istio-ingressgateway`, który po
 
 1. Wyświetl szczegóły gateway
   
-  ```javascript
+  ```bash
   kubectl describe gateway bookinfo-gateway
   ```
 
 1. Wyświetl szczegóły VirtualService
 
-  ```javascript
+  ```bash
   kubectl describe virtualservice bookinfo
   ```
 
 1. Upewnij się, że Service `productpage` odpowiada gdy wywołany lokalnie z innego Pod w klastrze
 
-  ```javascript
+  ```bash
   kubectl exec -it \
     $(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}') \
     -c ratings -- curl productpage:9080/productpage \
@@ -102,13 +102,13 @@ W naszym ćwiczeniu mamy już utworzony obiekt `istio-ingressgateway`, który po
 
 1. Wylistuj Service dostępne w klastrze
   
-  ```javascript
+  ```bash
   kubectl get svc
   ```
   
 1. Utwórz nowy plik z DestinationRule dla każdego Service
 
-  ```javascript
+  ```bash
   cat > destinationrule.yaml <<EOF
   apiVersion: networking.istio.io/v1alpha3
   kind: DestinationRule
@@ -177,7 +177,7 @@ W naszym ćwiczeniu mamy już utworzony obiekt `istio-ingressgateway`, który po
 
 1. Zweryfikuj, że DestinationRule zostały utworzone
 
-  ```javascript
+  ```bash
   kubectl get dr
   ```
 
@@ -189,7 +189,7 @@ W naszym ćwiczeniu mamy już utworzony obiekt `istio-ingressgateway`, który po
 
 1. Stwórz nowy plik `destinationrule-v1.yaml`
 
-  ```javascript
+  ```bash
   cat > destinationrule-v1.yaml <<EOF
   apiVersion: networking.istio.io/v1alpha3
   kind: VirtualService

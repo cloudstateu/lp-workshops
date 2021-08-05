@@ -13,19 +13,19 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
 
 1. Utwórz nowy namespace
 
-  ```javascript
+  ```bash
   kubectl create ns boutique
   ```
 
 1. Enable sidecar injection
    
-  ```javascript
+  ```bash
   kubectl label namespace default istio-injection- istio.io/rev=asm-196-2 --overwrite
   ```
 
 1. Deploy nowej apliakcji
    
-  ```javascript
+  ```bash
   kubectl apply -n boutique -f https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/master/release/kubernetes-manifests.yaml
   ```
 
@@ -35,7 +35,7 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
   
 1. Utwórz nowy plik z konfiguracją Istio  
 
-  ```javascript
+  ```bash
   cat > boutique-istio.yaml <<EOF
   apiVersion: networking.istio.io/v1alpha3
   kind: Gateway
@@ -118,13 +118,13 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
   EOF
   ```
 
-  ```javascript
+  ```bash
   kubectl apply -n boutique -f ./boutique-istio.yaml
   ```
 
 1. Konfiguracja deploymentu
 
-  ```javascript
+  ```bash
   kubectl patch -n boutique deployments/productcatalogservice -p '{"spec":{"template":{"metadata":{"labels":{"version":"v1"}}}}}'
   ```
   
@@ -160,16 +160,16 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
 
 1. Pobierz repozytorium z przykładową aplikacją
 
-  ```javascript
+  ```bash
   git clone https://github.com/GoogleCloudPlatform/istio-samples.git \
   ~/istio-samples
   ```
   
-  ```javascript
+  ```bash
   cd istio-samples/istio-canary-gke/canary
   ```
   
-  ```javascript
+  ```bash
   kubectl apply -n boutique -f destinationrule.yaml -f productcatalog-v2.yaml -f vs-split-traffic.yaml
   ```
 
@@ -195,7 +195,7 @@ W tym celu wykorzystamy GCP Operations Suite. GKE z ASM wypisze logi do Cloud Lo
 
 1. Wykonaj Rollback do poprzedniej wersji aplikacji
   
-  ```javascript
+  ```bash
   kubectl delete -n boutique -f destinationrule.yaml -f productcatalog-v2.yaml -f vs-split-traffic.yaml
   ```
 
